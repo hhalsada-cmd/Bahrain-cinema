@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cinemas">
+<meta name="theme-color" content="#0d0d12">
+<title>Bahrain Cinemas</title>
+<style>
+  :root { --bg:#0d0d12; --card:#18181f; --line:#2a2a33; --text:#f2f2f5; --muted:#8b8b96; --accent:#e50914; --chip:#23232c; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; padding-bottom:env(safe-area-inset-bottom); }
+  header { position:sticky; top:0; z-index:5; background:rgba(13,13,18,.92); backdrop-filter:blur(12px); padding:calc(env(safe-area-inset-top) + 12px) 16px 10px; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 10px; font-size:24px; letter-spacing:-.3px; }
+  .search { width:100%; padding:10px 14px; border-radius:12px; border:1px solid var(--line); background:var(--card); color:var(--text); font-size:16px; outline:none; }
+  .chips { display:flex; gap:8px; overflow-x:auto; padding:10px 0 2px; scrollbar-width:none; }
+  .chips::-webkit-scrollbar { display:none; }
+  .chip { flex:0 0 auto; padding:7px 13px; border-radius:999px; background:var(--chip); color:var(--text); border:1px solid transparent; font-size:14px; cursor:pointer; white-space:nowrap; }
+  .chip.on { background:var(--accent); }
+  main { padding:14px 16px 30px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:14px; }
+  .card { cursor:pointer; }
+  .poster { width:100%; aspect-ratio:2/3; border-radius:12px; background:var(--card) center/cover no-repeat; display:flex; align-items:flex-end; padding:8px; color:var(--muted); font-size:13px; }
+  .card h3 { margin:7px 0 2px; font-size:14px; line-height:1.25; }
+  .card p { margin:0; color:var(--muted); font-size:12.5px; }
+  .empty { color:var(--muted); text-align:center; padding:40px 10px; }
+  .back { background:none; border:0; color:var(--accent); font-size:16px; padding:0 0 8px; cursor:pointer; }
+  .hero { display:flex; gap:14px; align-items:flex-start; margin-bottom:6px; }
+  .hero .poster { width:96px; flex:0 0 96px; }
+  .hero h2 { margin:2px 0 6px; font-size:20px; line-height:1.2; }
+  .cinema { background:var(--card); border-radius:14px; padding:12px 14px; margin-top:12px; }
+  .cinema h4 { margin:0 0 8px; font-size:15px; }
+  .exp { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.5px; margin:8px 0 6px; }
+  .times { display:flex; flex-wrap:wrap; gap:7px; }
+  .time { padding:6px 11px; border-radius:9px; border:1px solid var(--line); font-size:14px; font-variant-numeric:tabular-nums; }
+  .time.past { opacity:.35; text-decoration:line-through; }
+  .time small { color:var(--muted); margin-left:4px; }
+  footer { color:var(--muted); font-size:12px; text-align:center; padding:10px 16px 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="heading">Bahrain Cinemas</h1>
+  <div id="controls">
+    <input class="search" id="search" type="search" placeholder="Search films" autocomplete="off">
+  </div>
+  <div class="chips" id="dates"></div>
+</header>
+<main id="view"><p class="empty">Loading showtimes…</p></main>
+<footer id="foot"></footer>
+
+<script>
+const state = { data:null, date:null, q:"" };
+const $ = (tag, cls, text) => { const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; };
+
+function todayISO(){ const d=new Date(Date.now()+3*3600e3); return d.toISOString().slice(0,10); }
+function minutes(t){ const m=t.match(/(\d+):(\d+)\s*(am|pm)/i); if(!m) return 0; let h=+m[1]%12; if(m[3].toLowerCase()==="pm") h+=12; let v=h*60+ +m[2]; if(v<5*60) v+=24*60; return v; }
+function dayLabel(iso){ const t=todayISO(); if(iso===t) return "Today"; const tm=new Date(t); tm.setDate(tm.getDate()+1); if(iso===tm.toISOString().slice(0,10)) return "Tomorrow"; return new Date(iso+"T12:00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"}); }
+function isPast(date,time){ if(date!==todayISO()) return false; const now=new Date(Date.now()+3*3600e3); let n=now.getUTCHours()*60+now.getUTCMinutes(); if(n<5*60) n+=24*60; return minutes(time)<n-10; }
+
+function dates(){ const s=new Set(); state.data.movies.forEach(m=>m.shows.forEach(x=>s.add(x.date))); return [...s].sort(); }
+
+function renderDates(){
+  const box=document.getElementById("dates"); box.innerHTML="";
+  dates().slice(0,7).forEach(d=>{ const c=$("button","chip"+(d===state.date?" on":""),dayLabel(d)); c.onclick=()=>{ state.date=d; route(); }; box.appendChild(c); });
+}
+
+function renderList(){
+  document.getElementById("heading").textContent="Bahrain Cinemas";
+  document.getElementById("controls").style.display="";
+  const view=document.getElementById("view"); view.innerHTML="";
+  const q=state.q.trim().toLowerCase();
+  const list=state.data.movies.filter(m=>m.shows.some(s=>s.date===state.date) && (!q || m.title.toLowerCase().includes(q)));
+  if(!list.length){ view.appendChild($("p","empty","No films found for this day.")); return; }
+  const grid=$("div","grid");
+  list.forEach(m=>{
+    const shows=m.shows.filter(s=>s.date===state.date);
+    const n=new Set(shows.map(s=>s.cinema)).size;
+    const card=$("div","card");
+    const p=$("div","poster"); if(m.poster) p.style.backgroundImage=`url("${encodeURI(m.poster)}")`; else p.textContent=m.title;
+    card.append(p,$("h3",null,m.title),$("p",null,`${n} cinema${n>1?"s":""} · ${shows.length} shows`));
+    card.onclick=()=>{ location.hash="film/"+m.id; };
+    grid.appendChild(card);
+  });
+  view.appendChild(grid);
+}
+
+function renderFilm(id){
+  const m=state.data.movies.find(x=>x.id===id); if(!m){ location.hash=""; return; }
+  document.getElementById("controls").style.display="none";
+  document.getElementById("heading").textContent=m.title;
+  const view=document.getElementById("view"); view.innerHTML="";
+  const back=$("button","back","‹ All films"); back.onclick=()=>history.length>1?history.back():(location.hash=""); view.appendChild(back);
+  const hero=$("div","hero"); const p=$("div","poster"); if(m.poster) p.style.backgroundImage=`url("${encodeURI(m.poster)}")`;
+  const info=$("div"); info.append($("h2",null,m.title),$("p",null,dayLabel(state.date)));
+  hero.append(p,info); view.appendChild(hero);
+  const shows=m.shows.filter(s=>s.date===state.date);
+  if(!shows.length){ view.appendChild($("p","empty","Not showing on this day. Pick another date above.")); return; }
+  const byCinema={}; shows.forEach(s=>((byCinema[s.cinema]??={})[s.exp]??=[]).push(s));
+  Object.keys(byCinema).sort().forEach(c=>{
+    const box=$("div","cinema"); box.appendChild($("h4",null,c));
+    Object.entries(byCinema[c]).forEach(([exp,list])=>{
+      box.appendChild($("div","exp",exp));
+      const t=$("div","times");
+      list.sort((a,b)=>minutes(a.time)-minutes(b.time)).forEach(s=>{
+        const el=$("span","time"+(isPast(s.date,s.time)?" past":""),s.time);
+        if(s.price){ el.appendChild($("small",null,s.price+" BD")); }
+        t.appendChild(el);
+      });
+      box.appendChild(t);
+    });
+    view.appendChild(box);
+  });
+}
+
+function route(){
+  renderDates();
+  const h=location.hash.slice(1);
+  if(h.startsWith("film/")) renderFilm(h.slice(5)); else renderList();
+  window.scrollTo(0,0);
+}
+
+document.getElementById("search").addEventListener("input",e=>{ state.q=e.target.value; renderList(); });
+window.addEventListener("hashchange",route);
+
+fetch("data.json?v="+Date.now()).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
+  state.data=d;
+  const ds=dates(); const t=todayISO(); state.date=ds.includes(t)?t:(ds[0]||t);
+  const up=new Date(d.updated);
+  document.getElementById("foot").textContent=`${d.cinemas.length} cinemas · updated ${up.toLocaleString("en-GB",{timeZone:"Asia/Bahrain",weekday:"short",hour:"2-digit",minute:"2-digit"})}`;
+  route();
+}).catch(()=>{ document.getElementById("view").innerHTML='<p class="empty">No showtimes yet. The first update hasn\'t run.</p>'; });
+</script>
+</body>
+</html>
