@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T20:33:28.928780+00:00",
+ "updated": "2026-11-23T04:12:40.468014+00:00",
  "cinemas": [
   "Cineco Al Hamra Cinema",
   "Cineco Juffair Cinema",
@@ -18,324 +18,331 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_a4c693a0a968c378a3a0bcafec28b847d9d95031378dded71391acf503af3efd.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "1:45 pm",
-     "exp": "Standard",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "12:00 pm",
+     "exp": "MAX",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "4:15 pm",
-     "exp": "Standard",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "3:00 pm",
+     "exp": "MAX",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
+     "exp": "MAX",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "9:00 pm",
+     "exp": "MAX",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
      "time": "7:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:50 am",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 pm",
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "1:55 pm",
      "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:05 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:10 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "THEATRE",
      "price": null
     },
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:45 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Gold",
      "price": null
     },
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "1:20 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "4:25 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:35 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "4:10 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:10 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "12:00 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "3:10 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "6:20 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "9:30 pm",
-     "exp": "IMAX",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "1:00 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "8:40 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "2:10 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "1:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "4:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "7:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "1:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "7:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:30 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "2:15 pm",
-     "exp": "MAX",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "1:15 pm",
+     "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "5:15 pm",
-     "exp": "MAX",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "8:15 pm",
-     "exp": "MAX",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "11:15 pm",
-     "exp": "MAX",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
      "time": "4:30 pm",
-     "exp": "THEATRE",
+     "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "7:40 pm",
-     "exp": "THEATRE",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "7:45 pm",
+     "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 pm",
-     "exp": "THEATRE",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "1:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "7:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "12:00 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "3:10 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "6:20 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "9:30 pm",
+     "exp": "IMAX",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "1:00 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "8:40 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "2:10 pm",
+     "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "1:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "4:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "10:45 pm",
      "exp": "Standard",
      "price": null
     }
@@ -347,318 +354,325 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_596701d14c53a993b3ad19eb5314a0dda6731e4a586a36f279ba4638b89a5095.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "3:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "8:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "10:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:10 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "1:40 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "4:10 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "6:40 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "8:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "9:10 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:40 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:30 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "4:45 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:00 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "8:10 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:35 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "5:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "10:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "2:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "8:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "5:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "2:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "7:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
+     "date": "2026-11-23",
+     "time": "6:20 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "9:00 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:45 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:45 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "7:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "9:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:45 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "7:00 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:10 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "6:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "8:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "9:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "10:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "3:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:00 pm",
      "exp": "VIP",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "7:30 pm",
      "exp": "VIP",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "8:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "10:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "Standard",
      "price": null
     }
    ]
@@ -669,527 +683,345 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_c9ce6d9b39821278ea944d97bed94516db4891bc26b095002fd247cbe8d5a80b.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "2:15 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "1:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "5:00 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "7:45 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "6:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "10:30 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "11:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "8:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "11:15 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:40 pm",
+     "date": "2026-11-23",
+     "time": "1:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:25 pm",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "6:10 pm",
+     "date": "2026-11-23",
+     "time": "5:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "8:55 pm",
+     "date": "2026-11-23",
+     "time": "8:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:40 pm",
+     "date": "2026-11-23",
+     "time": "11:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
      "time": "6:15 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "9:00 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:45 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "11:40 am",
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "2:20 pm",
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "3:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "3:50 pm",
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "6:30 pm",
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "8:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "9:10 pm",
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 pm",
      "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "11:50 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "12:20 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "3:10 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "4:20 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "7:10 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "10:00 pm",
-     "exp": "Platinum",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "2:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:30 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "11:40 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "2:20 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "3:50 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "6:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "9:10 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "11:50 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "12:20 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "3:10 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "4:20 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "7:10 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "10:00 pm",
+     "exp": "Platinum",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
      "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
      "time": "3:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
      "time": "8:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "12:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "3:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "11:20 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "11:15 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "12:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "3:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:15 pm",
      "exp": "VIP",
      "price": null
-    }
-   ]
-  },
-  {
-   "id": "2099759",
-   "title": "Ramayana",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_33b76bc5de0608725dff8037db328446157f9f0e00a4d56787e320dbbe8d64c2.jpg",
-   "shows": [
+    },
     {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "4:00 pm",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "2:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "8:00 pm",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "11:59 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "4:15 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "7:00 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
      "time": "7:45 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "8:00 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "11:45 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "1:30 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:25 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "5:45 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:00 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:25 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:30 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "9:30 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "7:40 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "3:00 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "7:00 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "3:30 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "1:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "3:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "7:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 pm",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 pm",
      "exp": "Standard",
      "price": null
     }
@@ -1201,149 +1033,352 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_d2a64e7a68954259a40f4a5c1cd4d5fbcd7ced14b99cb6119957f3ba37787828.jpg",
    "shows": [
     {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "2:45 pm",
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:00 am",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "9:00 pm",
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "1:35 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "5:10 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:50 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "3:00 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "6:30 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:00 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:00 pm",
      "exp": "Gold",
      "price": null
     },
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:25 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:10 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "1:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "4:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "8:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "7:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "1:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "8:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Al Hamra Cinema",
+     "date": "2026-11-23",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Al Hamra Cinema",
+     "date": "2026-11-23",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Al Hamra Cinema",
+     "date": "2026-11-23",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "3:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2099759",
+   "title": "Ramayana",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_33b76bc5de0608725dff8037db328446157f9f0e00a4d56787e320dbbe8d64c2.jpg",
+   "shows": [
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "12:00 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "3:45 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:00 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:45 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "12:30 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "4:15 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "7:00 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "7:45 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "8:00 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "10:45 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "11:45 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "3:00 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "7:00 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "7:40 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "1:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "7:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     }
@@ -1355,93 +1390,100 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_d97980457cc225355373602a2dc24093878799b87bfee2acb83135a583f1e3c2.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "4:00 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "10:30 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "5:00 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "9:20 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "2:55 pm",
+     "date": "2026-11-23",
+     "time": "4:50 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:15 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "12:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "3:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "10:45 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:00 pm",
      "exp": "Kids",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:30 pm",
      "exp": "Kids",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:00 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
      "exp": "Kids",
      "price": null
     }
@@ -1453,296 +1495,128 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_f4a8610f212ebb3a8d6c5119178682afbad55632b69a3614d6aa58be13b082bf.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "7:00 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "5:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "10:30 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "9:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:15 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:15 pm",
+     "date": "2026-11-23",
+     "time": "1:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:45 pm",
+     "date": "2026-11-23",
+     "time": "5:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:15 pm",
+     "date": "2026-11-23",
+     "time": "8:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "3:00 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "9:45 pm",
      "exp": "THEATRE",
      "price": null
     },
     {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "5:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "7:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "1:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "4:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "8:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "10:15 pm",
-     "exp": "VIP",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "2:00 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
-   "id": "2103111",
-   "title": "Aakasamlo Oka Tara",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_209805b2ae777fa8c628e84cb0fc8853f4ff5c184bf9bbb18f2535ad8cb81469.jpg",
-   "shows": [
-    {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "11:45 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Al Hamra Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "4:15 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "7:30 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:55 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:25 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "6:55 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:25 pm",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "1:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "4:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "8:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "11:30 pm",
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "10:15 pm",
+     "exp": "VIP",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "2:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "10:15 am",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "7:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "1:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "2:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "4:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "7:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "8:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
-     "time": "11:00 pm",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 pm",
      "exp": "Standard",
      "price": null
     }
@@ -1754,92 +1628,92 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_995ab4f7ff20f836fffd7bc56210e8b0186f9e785c63e74c3083ba5feab49ba7.jpg",
    "shows": [
     {
-     "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
-     "time": "4:00 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:35 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:25 pm",
+     "date": "2026-11-23",
+     "time": "7:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "3:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "8:45 pm",
-     "exp": "Standard",
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
+     "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "2:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:15 pm",
      "exp": "Standard",
      "price": null
@@ -1852,86 +1726,240 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_736eda839f9a3a87338695f79eed955f4e6d53980684cf5bf9f472a9b39a6b33.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "2:30 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "7:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "4:45 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "9:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:50 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "5:05 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "11:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "9:20 pm",
+     "date": "2026-11-23",
+     "time": "12:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "2:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "9:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "5:20 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "7:35 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "9:50 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "4:45 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2103111",
+   "title": "Aakasamlo Oka Tara",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_209805b2ae777fa8c628e84cb0fc8853f4ff5c184bf9bbb18f2535ad8cb81469.jpg",
+   "shows": [
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:15 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "1:35 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:55 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:35 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "4:15 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "10:15 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "1:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "2:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "7:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "1:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "4:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "5:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     }
@@ -1943,94 +1971,157 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_57acc8985d757fa495dd5a19a638022f4db3df940abad4565343bed221deca02.jpg",
    "shows": [
     {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "1:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "6:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "1:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "6:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Reel Marassi Galleria Cinema",
+     "date": "2026-11-23",
+     "time": "11:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
      "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "3:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "8:15 pm",
      "exp": "Standard",
      "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:25 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:55 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:25 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "5:55 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "8:25 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:55 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
-     "time": "11:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
+    }
+   ]
+  },
+  {
+   "id": "2103090",
+   "title": "Three Wishes for Cinderella",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_cf80a1e47b67d31416295b825c1e092e8c0da694e66ea9e02ac8ea08a7a46052.jpg",
+   "shows": [
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
+     "time": "2:55 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
      "time": "12:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "4:20 pm",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "7:25 pm",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "9:35 pm",
-     "exp": "Standard",
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "12:00 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "2:00 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "date": "2026-11-23",
+     "time": "6:30 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "2:00 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "6:30 pm",
+     "exp": "Kids",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "8:30 pm",
+     "exp": "Kids",
      "price": null
     }
    ]
@@ -2042,35 +2133,42 @@
    "shows": [
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:00 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "6:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:15 pm",
      "exp": "Standard",
      "price": null
@@ -2083,44 +2181,44 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_1faa625a00e6ac6b670e860dde53d261156d366607aee9374bc7205bdc1691ce.jpg",
    "shows": [
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "5:30 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "2:40 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "10:45 pm",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "7:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "2:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "7:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "2:30 pm",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "5:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "9:50 pm",
+     "cinema": "Epix Al Liwan Cinema",
+     "date": "2026-11-23",
+     "time": "10:45 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2132,57 +2230,50 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_5d5e143608df535c6713df20af166ee08b7d0e742b3adb45fc4bfc607261e9cc.jpg",
    "shows": [
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "12:40 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
      "time": "3:25 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "6:10 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "8:55 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:35 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "1:45 pm",
+     "date": "2026-11-23",
+     "time": "9:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
-     "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "6:50 pm",
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "10:30 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "1:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "6:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "9:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
@@ -2196,135 +2287,65 @@
    "shows": [
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:50 am",
+     "date": "2026-11-23",
+     "time": "10:15 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:05 pm",
+     "date": "2026-11-23",
+     "time": "2:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:20 pm",
+     "date": "2026-11-23",
+     "time": "6:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:35 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "2:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "8:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "10:00 pm",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:45 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "7:15 pm",
      "exp": "Standard",
      "price": null
-    }
-   ]
-  },
-  {
-   "id": "2103090",
-   "title": "Three Wishes for Cinderella",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_cf80a1e47b67d31416295b825c1e092e8c0da694e66ea9e02ac8ea08a7a46052.jpg",
-   "shows": [
+    },
     {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
      "time": "2:00 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "6:30 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "date": "2026-11-22",
-     "time": "8:30 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "12:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "4:00 pm",
+     "date": "2026-11-23",
+     "time": "8:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
-     "time": "6:00 pm",
+     "date": "2026-11-23",
+     "time": "10:00 pm",
      "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "12:00 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "2:00 pm",
-     "exp": "Kids",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "date": "2026-11-22",
-     "time": "6:30 pm",
-     "exp": "Kids",
      "price": null
     }
    ]
@@ -2336,14 +2357,14 @@
    "shows": [
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:45 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:00 pm",
      "exp": "Standard",
      "price": null
@@ -2357,22 +2378,36 @@
    "shows": [
     {
      "cinema": "Mukta A2  Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Gold",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Juffair Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
      "time": "8:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "date": "2026-11-23",
+     "time": "11:15 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2384,30 +2419,44 @@
    "poster": "https://media0110.elcinema.com/uploads/_150x200_bc4cf594f046767798987e2a5a69ba60c48ddee1bce29770fbc4caf075faaa15.jpg",
    "shows": [
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "2:20 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "7:05 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:35 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox The Avenues Cinema",
-     "date": "2026-11-22",
-     "time": "5:15 pm",
+     "date": "2026-11-23",
+     "time": "5:25 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "10:20 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "date": "2026-11-23",
+     "time": "4:00 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "1:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2420,7 +2469,7 @@
    "shows": [
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:15 pm",
      "exp": "Standard",
      "price": null
@@ -2434,22 +2483,22 @@
    "shows": [
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:50 am",
+     "date": "2026-11-23",
+     "time": "10:45 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "4:35 pm",
+     "date": "2026-11-23",
+     "time": "3:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:50 pm",
+     "date": "2026-11-23",
+     "time": "10:45 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2462,21 +2511,21 @@
    "shows": [
     {
      "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:10 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "1:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Reel Marassi Galleria Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "5:20 pm",
      "exp": "Standard",
      "price": null
@@ -2490,22 +2539,22 @@
    "shows": [
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "1:40 pm",
+     "date": "2026-11-23",
+     "time": "1:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "6:40 pm",
+     "date": "2026-11-23",
+     "time": "6:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "11:40 pm",
+     "date": "2026-11-23",
+     "time": "11:00 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2518,21 +2567,21 @@
    "shows": [
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "6:00 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
@@ -2546,7 +2595,7 @@
    "shows": [
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:30 pm",
      "exp": "Standard",
      "price": null
@@ -2560,22 +2609,22 @@
    "shows": [
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "10:55 am",
+     "date": "2026-11-23",
+     "time": "10:15 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "3:55 pm",
+     "date": "2026-11-23",
+     "time": "3:15 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
-     "time": "8:55 pm",
+     "date": "2026-11-23",
+     "time": "8:15 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2588,7 +2637,7 @@
    "shows": [
     {
      "cinema": "Cineco Seef Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:30 am",
      "exp": "Standard",
      "price": null
@@ -2602,21 +2651,28 @@
    "shows": [
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
+     "time": "10:15 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "date": "2026-11-23",
      "time": "11:15 am",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "4:45 pm",
      "exp": "Standard",
      "price": null
     },
     {
      "cinema": "Vox Bahrain City Centre Cinema",
-     "date": "2026-11-22",
+     "date": "2026-11-23",
      "time": "10:15 pm",
      "exp": "Standard",
      "price": null
