@@ -39,27 +39,6 @@ MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july",
      "august", "september", "october", "november", "december"], start=1)}
 
-# Marks every clickable day tab with data-cc-day="<text>", one per distinct day.
-MARK_TABS_JS = r"""
-(re) => {
-  const rx = new RegExp(re);
-  const seen = new Set(), out = [];
-  const els = document.querySelectorAll('li, a, button, span, div, label');
-  for (const el of els) {
-    const t = (el.innerText || '').trim().replace(/\s+/g, ' ');
-    if (!rx.test(t) || seen.has(t)) continue;
-    // Prefer the innermost element holding just this text.
-    if ([...el.children].some(c => (c.innerText || '').trim().replace(/\s+/g, ' ') === t)) continue;
-    if (/^H[1-6]$/.test(el.tagName) || el.closest('h1,h2,h3,h4,h5,h6')) continue;
-    seen.add(t);
-    el.setAttribute('data-cc-day', t);
-    out.push(t);
-  }
-  return out;
-}
-"""
-
-
 def to_iso(day_text, today):
     m = DATE_RE.match(day_text)
     if not m:
@@ -128,8 +107,6 @@ def parse_html(html, today, forced_date=None):
     movie, date, exp = None, forced_date, "Standard"
     for el in soup.body.descendants:
         if isinstance(el, Tag):
-            if el.has_attr("data-cc-day"):
-                continue
             if el.name == "a":
                 m = WORK_LINK.match((el.get("href") or "").replace(BASE, "").split("?")[0])
                 if m:
@@ -145,10 +122,7 @@ def parse_html(html, today, forced_date=None):
             continue
         if not isinstance(el, NavigableString) or isinstance(el, Comment):
             continue
-        if el.parent and el.parent.name in ("script", "style", "noscript"):
-            continue
-        # Skip the text of the day-tab strip itself.
-        if any(p.has_attr("data-cc-day") for p in el.parents if isinstance(p, Tag)):
+        if el.parent and el.parent.name in ("script", "style", "noscript", "option", "select"):
             continue
         text = " ".join(el.split())
         if not text:
@@ -171,7 +145,13 @@ def parse_html(html, today, forced_date=None):
     return name, shows, posters
 
 
+SELECTOR = "#theater-showtimes-date-selector"
+WAIT_FOR_DAY_JS = """(lbl) => [...document.querySelectorAll('h2, h4')]
+  .some(e => (e.innerText || '').trim().replace(/\\s+/g, ' ') === lbl)"""
+
+
 def scrape_theater(page, url, today, debug):
+    """elCinema shows one day at a time; the other days are in a date dropdown."""
     if not load(page, url):
         return None, [], {}
     name, all_shows, posters = None, [], {}
@@ -185,29 +165,44 @@ def scrape_theater(page, url, today, debug):
             posters.setdefault(k, v)
         return len(s)
 
-    tabs = page.evaluate(MARK_TABS_JS, DATE_RE.pattern)
+    options = []
+    if page.query_selector(SELECTOR):
+        options = page.eval_on_selector_all(
+            f"{SELECTOR} option",
+            "os => os.map(o => [o.value, (o.textContent || '').trim().replace(/\\s+/g, ' ')])")
     if debug is not None:
-        debug["tabs"] = tabs
+        debug["tabs"] = options
         debug["html_before"] = page.content()
-    if not tabs:
-        collect()
-    for t in tabs[:DAYS_AHEAD]:
-        iso = to_iso(t, today)
+
+    def choose(value, label):
+        """Picks a date in the dropdown; True once that day's heading is on screen."""
         try:
-            page.locator(f'[data-cc-day="{t}"]').first.click(timeout=8000, force=True)
-            try:
-                page.wait_for_load_state("networkidle", timeout=8000)
-            except Exception:
-                pass
-            page.wait_for_timeout(1200)
-        except Exception as e:
-            print(f"    could not click {t}: {e}")
-        # Re-mark in case the tab strip was re-rendered.
-        page.evaluate(MARK_TABS_JS, DATE_RE.pattern)
+            if not page.query_selector(SELECTOR):
+                load(page, url)
+            page.select_option(SELECTOR, value=value, timeout=10000)
+            page.wait_for_function(WAIT_FOR_DAY_JS, arg=label, timeout=15000)
+        except Exception:
+            return False
+        try:
+            page.wait_for_load_state("networkidle", timeout=8000)
+        except Exception:
+            pass
+        page.wait_for_timeout(800)
+        return True
+
+    collect()  # the day that is already showing
+    for value, label in options[1:DAYS_AHEAD]:
+        ok = choose(value, label)
+        if not ok:                       # try once more from a fresh page
+            load(page, url)
+            ok = choose(value, label)
+        if not ok:
+            print(f"    could not load {label}")
+            continue
         got = collect()
-        if got == 0 and iso:
-            collect(iso)
-        if debug is not None and "html_after" not in debug and t != tabs[0]:
+        if got == 0 and value[:4].isdigit():
+            collect(value)
+        if debug is not None and "html_after" not in debug:
             debug["html_after"] = page.content()
     return name, all_shows, posters
 
