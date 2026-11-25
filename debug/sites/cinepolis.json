@@ -1,0 +1,17 @@
+{
+ "start": "https://cinepolisgulf.com/",
+ "status": 200,
+ "final_url": "https://www.cinepolisgulf.com/",
+ "title": "Cinépolis Gulf",
+ "links": [],
+ "api_calls": [
+  {
+   "url": "https://www.cloudflare.com/cdn-cgi/trace",
+   "method": "GET",
+   "status": 200,
+   "type": "text/plain",
+   "post": "",
+   "body": "fl=1403f102\nh=www.cloudflare.com\nip=20.115.229.98\nts=1795633024.000\nvisit_scheme=https\nuag=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\ncolo=SEA\nsliver=none\nhttp=http/2\nloc=US\ntls=TLSv1.3\nsni=plaintext\nwarp=off\ngateway=off\nrbi=off\nkex=X25519MLKEM768\n"
+  }
+ ]
+}

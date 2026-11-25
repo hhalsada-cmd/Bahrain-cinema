@@ -1,0 +1,5 @@
+{
+ "start": "https://bhr.voxcinemas.com/showtimes",
+ "error": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://bhr.voxcinemas.com/showtimes\nCall log:\n  - navigating to \"https://bhr.voxcinemas.com/showtimes\", waiting until \"domcontentloaded\"\n",
+ "api_calls": []
+}
