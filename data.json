@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T04:15:49.722791+00:00",
+ "updated": "2026-11-25T12:12:29.345988+00:00",
  "cinemas": [
   "Cineco Al Hamra Cinema",
   "Cineco Juffair Cinema",
@@ -21,7 +21,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "12:00 pm",
+     "time": "1:45 pm",
      "exp": "MAX",
      "price": null
     },
@@ -29,7 +29,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "3:00 pm",
+     "time": "5:00 pm",
      "exp": "MAX",
      "price": null
     },
@@ -37,7 +37,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "6:00 pm",
+     "time": "8:15 pm",
      "exp": "MAX",
      "price": null
     },
@@ -45,7 +45,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "9:00 pm",
+     "time": "11:30 pm",
      "exp": "MAX",
      "price": null
     },
@@ -53,7 +53,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "4:30 pm",
+     "time": "7:15 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -61,7 +61,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "7:30 pm",
+     "time": "8:15 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -69,7 +69,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "10:30 pm",
+     "time": "10:15 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -141,7 +141,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "4:00 pm",
+     "time": "4:10 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -154,26 +154,10 @@
      "price": null
     },
     {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
+     "cinema": "Mukta A2  Cinema",
+     "url": "https://elcinema.com/en/theater/3101515/",
      "date": "2026-11-25",
      "time": "11:00 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "url": "https://elcinema.com/en/theater/3101515/",
-     "date": "2026-11-25",
-     "time": "4:45 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "url": "https://elcinema.com/en/theater/3101515/",
-     "date": "2026-11-25",
-     "time": "11:30 pm",
      "exp": "Gold",
      "price": null
     },
@@ -436,6 +420,14 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
      "time": "10:15 pm",
      "exp": "Standard",
      "price": null
@@ -444,7 +436,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "6:20 pm",
+     "time": "4:30 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -452,7 +444,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "9:00 pm",
+     "time": "5:45 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -460,7 +452,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "11:45 pm",
+     "time": "7:45 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -468,7 +460,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "11:45 am",
+     "time": "11:30 am",
      "exp": "Standard",
      "price": null
     },
@@ -476,7 +468,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "2:15 pm",
+     "time": "2:00 pm",
      "exp": "Standard",
      "price": null
     },
@@ -484,7 +476,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "4:45 pm",
+     "time": "4:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -500,7 +492,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "7:15 pm",
+     "time": "7:00 pm",
      "exp": "Standard",
      "price": null
     },
@@ -524,7 +516,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "9:45 pm",
+     "time": "9:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -588,7 +580,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "10:30 pm",
+     "time": "10:35 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -636,31 +628,7 @@
      "cinema": "Cineco Juffair Cinema",
      "url": "https://elcinema.com/en/theater/3101522/",
      "date": "2026-11-25",
-     "time": "6:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
      "time": "8:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "9:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "11:45 pm",
      "exp": "Standard",
      "price": null
     },
@@ -693,14 +661,6 @@
      "url": "https://elcinema.com/en/theater/3101574/",
      "date": "2026-11-25",
      "time": "6:00 pm",
-     "exp": "Platinum",
-     "price": null
-    },
-    {
-     "cinema": "Reel Marassi Galleria Cinema",
-     "url": "https://elcinema.com/en/theater/3101574/",
-     "date": "2026-11-25",
-     "time": "8:00 pm",
      "exp": "Platinum",
      "price": null
     },
@@ -819,7 +779,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "1:15 pm",
+     "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -827,7 +787,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "4:00 pm",
+     "time": "3:15 pm",
      "exp": "Standard",
      "price": null
     },
@@ -835,7 +795,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "6:15 pm",
+     "time": "6:00 pm",
      "exp": "Standard",
      "price": null
     },
@@ -843,31 +803,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "11:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "8:30 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "11:15 pm",
+     "time": "5:00 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -875,7 +811,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "11:00 am",
+     "time": "10:15 am",
      "exp": "Standard",
      "price": null
     },
@@ -891,7 +827,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "4:00 pm",
+     "time": "3:45 pm",
      "exp": "Standard",
      "price": null
     },
@@ -899,7 +835,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "5:45 pm",
+     "time": "6:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -907,32 +843,8 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "8:30 pm",
+     "time": "9:15 pm",
      "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "3:30 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "6:15 pm",
-     "exp": "THEATRE",
      "price": null
     },
     {
@@ -940,14 +852,6 @@
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
      "time": "9:00 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:45 pm",
      "exp": "THEATRE",
      "price": null
     },
@@ -1036,14 +940,6 @@
      "url": "https://elcinema.com/en/theater/3101522/",
      "date": "2026-11-25",
      "time": "4:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "10:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1218,7 +1114,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "10:00 am",
+     "time": "1:15 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1226,23 +1122,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "1:35 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "5:10 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "8:50 pm",
+     "time": "5:00 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1354,15 +1234,7 @@
      "cinema": "Cineco Al Hamra Cinema",
      "url": "https://elcinema.com/en/theater/3101524/",
      "date": "2026-11-25",
-     "time": "2:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Al Hamra Cinema",
-     "url": "https://elcinema.com/en/theater/3101524/",
-     "date": "2026-11-25",
-     "time": "5:45 pm",
+     "time": "2:45 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1417,7 +1289,15 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "12:00 pm",
+     "time": "10:15 am",
+     "exp": "3D",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "2:15 pm",
      "exp": "3D",
      "price": null
     },
@@ -1433,7 +1313,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "4:00 pm",
+     "time": "6:15 pm",
      "exp": "3D",
      "price": null
     },
@@ -1441,23 +1321,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "8:00 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "10:45 pm",
-     "exp": "3D",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
+     "time": "10:15 pm",
      "exp": "3D",
      "price": null
     },
@@ -1473,7 +1337,7 @@
      "cinema": "Mukta A2  Cinema",
      "url": "https://elcinema.com/en/theater/3101515/",
      "date": "2026-11-25",
-     "time": "4:15 pm",
+     "time": "4:00 pm",
      "exp": "Gold",
      "price": null
     },
@@ -1482,14 +1346,6 @@
      "url": "https://elcinema.com/en/theater/3101515/",
      "date": "2026-11-25",
      "time": "7:00 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "url": "https://elcinema.com/en/theater/3101515/",
-     "date": "2026-11-25",
-     "time": "7:45 pm",
      "exp": "Gold",
      "price": null
     },
@@ -1632,7 +1488,15 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "12:30 pm",
+     "time": "12:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "2:25 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1641,6 +1505,14 @@
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
      "time": "4:50 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "6:10 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1672,7 +1544,15 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "8:15 pm",
+     "time": "8:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "9:55 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1751,7 +1631,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "5:45 pm",
+     "time": "1:40 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1759,23 +1639,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "9:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "5:00 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "10:15 am",
+     "time": "5:10 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1783,7 +1647,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "1:45 pm",
+     "time": "12:00 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1791,7 +1655,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "5:15 pm",
+     "time": "3:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1799,7 +1663,15 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "8:45 pm",
+     "time": "7:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "10:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -1852,14 +1724,6 @@
      "price": null
     },
     {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
      "cinema": "Epix Dana Mall Cinema",
      "url": "https://elcinema.com/en/theater/3101599/",
      "date": "2026-11-25",
@@ -1894,228 +1758,6 @@
    ]
   },
   {
-   "id": "2103091",
-   "title": "Bachelor Party D'eux",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_995ab4f7ff20f836fffd7bc56210e8b0186f9e785c63e74c3083ba5feab49ba7.jpg",
-   "shows": [
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "12:35 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "7:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Mukta A2  Cinema",
-     "url": "https://elcinema.com/en/theater/3101515/",
-     "date": "2026-11-25",
-     "time": "4:00 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "12:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "2:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "8:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "3:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "url": "https://elcinema.com/en/theater/3101599/",
-     "date": "2026-11-25",
-     "time": "8:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "url": "https://elcinema.com/en/theater/3101599/",
-     "date": "2026-11-25",
-     "time": "11:15 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
-   "id": "2101989",
-   "title": "Crypto",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_736eda839f9a3a87338695f79eed955f4e6d53980684cf5bf9f472a9b39a6b33.jpg",
-   "shows": [
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "7:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "9:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "11:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "12:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "4:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "9:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "url": "https://elcinema.com/en/theater/3101599/",
-     "date": "2026-11-25",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "url": "https://elcinema.com/en/theater/3101599/",
-     "date": "2026-11-25",
-     "time": "6:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "url": "https://elcinema.com/en/theater/3101621/",
-     "date": "2026-11-25",
-     "time": "2:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "url": "https://elcinema.com/en/theater/3101621/",
-     "date": "2026-11-25",
-     "time": "4:45 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
    "id": "2103111",
    "title": "Aakasamlo Oka Tara",
    "poster": "https://media0110.elcinema.com/uploads/_150x200_209805b2ae777fa8c628e84cb0fc8853f4ff5c184bf9bbb18f2535ad8cb81469.jpg",
@@ -2124,7 +1766,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "10:15 am",
+     "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2132,7 +1774,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "1:35 pm",
+     "time": "4:00 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2140,23 +1782,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "4:55 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "8:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:35 pm",
+     "time": "7:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2287,6 +1913,220 @@
      "time": "11:30 pm",
      "exp": "Standard",
      "price": null
+    },
+    {
+     "cinema": "Cineco Al Hamra Cinema",
+     "url": "https://elcinema.com/en/theater/3101524/",
+     "date": "2026-11-25",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2103091",
+   "title": "Bachelor Party D'eux",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_995ab4f7ff20f836fffd7bc56210e8b0186f9e785c63e74c3083ba5feab49ba7.jpg",
+   "shows": [
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "12:55 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "url": "https://elcinema.com/en/theater/3101515/",
+     "date": "2026-11-25",
+     "time": "4:00 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "12:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "2:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "10:30 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "3:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "url": "https://elcinema.com/en/theater/3101599/",
+     "date": "2026-11-25",
+     "time": "8:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "url": "https://elcinema.com/en/theater/3101599/",
+     "date": "2026-11-25",
+     "time": "11:15 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2101989",
+   "title": "Crypto",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_736eda839f9a3a87338695f79eed955f4e6d53980684cf5bf9f472a9b39a6b33.jpg",
+   "shows": [
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "7:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "9:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "11:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "1:25 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "10:25 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "9:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "url": "https://elcinema.com/en/theater/3101599/",
+     "date": "2026-11-25",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "url": "https://elcinema.com/en/theater/3101599/",
+     "date": "2026-11-25",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "url": "https://elcinema.com/en/theater/3101621/",
+     "date": "2026-11-25",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "url": "https://elcinema.com/en/theater/3101621/",
+     "date": "2026-11-25",
+     "time": "4:45 pm",
+     "exp": "Standard",
+     "price": null
     }
    ]
   },
@@ -2299,15 +2139,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "1:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "6:45 pm",
+     "time": "3:40 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2386,18 +2218,340 @@
    ]
   },
   {
-   "id": "2103090",
-   "title": "Three Wishes for Cinderella",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_cf80a1e47b67d31416295b825c1e092e8c0da694e66ea9e02ac8ea08a7a46052.jpg",
+   "id": "2102967",
+   "title": "Bouma",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_5015dd94644da53fb5a6731ffaec22e470d8dff8bbea7eac9046975cee3edfc1.jpg",
+   "shows": [
+    {
+     "cinema": "Mukta A2  Cinema",
+     "url": "https://elcinema.com/en/theater/3101515/",
+     "date": "2026-11-25",
+     "time": "5:00 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "1:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "6:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "url": "https://elcinema.com/en/theater/3101599/",
+     "date": "2026-11-25",
+     "time": "12:15 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2097394",
+   "title": "Focker In-Law",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_c00cfba519505cd5d313f725608072ce02c357aab5d0d720f91ecedc7a85dbfa.jpg",
    "shows": [
     {
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "2:55 pm",
+     "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "11:00 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "11:20 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "11:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2098323",
+   "title": "Godzilla Minus Zero",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_1faa625a00e6ac6b670e860dde53d261156d366607aee9374bc7205bdc1691ce.jpg",
+   "shows": [
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "2:40 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "8:40 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "2:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "7:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "url": "https://elcinema.com/en/theater/3101621/",
+     "date": "2026-11-25",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Al Liwan Cinema",
+     "url": "https://elcinema.com/en/theater/3101621/",
+     "date": "2026-11-25",
+     "time": "10:45 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2099110",
+   "title": "Hexed",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_9f288bc6e4200501a2a0eedbc2b1196371446fbb46a866ccf1a91451562d23ab.jpg",
+   "shows": [
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "11:20 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "url": "https://elcinema.com/en/theater/3101515/",
+     "date": "2026-11-25",
+     "time": "3:30 pm",
+     "exp": "Gold",
+     "price": null
+    },
+    {
+     "cinema": "Mukta A2  Cinema",
+     "url": "https://elcinema.com/en/theater/3101515/",
+     "date": "2026-11-25",
+     "time": "5:45 pm",
+     "exp": "Gold",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2099777",
+   "title": "How to Rob a Bank",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_5d5e143608df535c6713df20af166ee08b7d0e742b3adb45fc4bfc607261e9cc.jpg",
+   "shows": [
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "1:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "8:35 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "10:30 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "1:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "4:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "6:45 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "9:30 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Epix Dana Mall Cinema",
+     "url": "https://elcinema.com/en/theater/3101599/",
+     "date": "2026-11-25",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2097821",
+   "title": "I, Object",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_7e2fd230251b1fe047614fbfe7099dddd1707e24b9e035eb16fef65c16ab8618.jpg",
+   "shows": [
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "11:25 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "3:35 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "11:45 am",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Seef Cinema",
+     "url": "https://elcinema.com/en/theater/3101521/",
+     "date": "2026-11-25",
+     "time": "7:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "2:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "8:00 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Cineco Juffair Cinema",
+     "url": "https://elcinema.com/en/theater/3101522/",
+     "date": "2026-11-25",
+     "time": "10:00 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2103090",
+   "title": "Three Wishes for Cinderella",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_cf80a1e47b67d31416295b825c1e092e8c0da694e66ea9e02ac8ea08a7a46052.jpg",
+   "shows": [
     {
      "cinema": "Cineco Juffair Cinema",
      "url": "https://elcinema.com/en/theater/3101522/",
@@ -2473,266 +2627,6 @@
    ]
   },
   {
-   "id": "2102967",
-   "title": "Bouma",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_5015dd94644da53fb5a6731ffaec22e470d8dff8bbea7eac9046975cee3edfc1.jpg",
-   "shows": [
-    {
-     "cinema": "Mukta A2  Cinema",
-     "url": "https://elcinema.com/en/theater/3101515/",
-     "date": "2026-11-25",
-     "time": "5:00 pm",
-     "exp": "Gold",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "1:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "6:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "url": "https://elcinema.com/en/theater/3101599/",
-     "date": "2026-11-25",
-     "time": "12:15 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
-   "id": "2098323",
-   "title": "Godzilla Minus Zero",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_1faa625a00e6ac6b670e860dde53d261156d366607aee9374bc7205bdc1691ce.jpg",
-   "shows": [
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "2:40 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "7:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "2:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "7:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "url": "https://elcinema.com/en/theater/3101621/",
-     "date": "2026-11-25",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Al Liwan Cinema",
-     "url": "https://elcinema.com/en/theater/3101621/",
-     "date": "2026-11-25",
-     "time": "10:45 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
-   "id": "2099777",
-   "title": "How to Rob a Bank",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_5d5e143608df535c6713df20af166ee08b7d0e742b3adb45fc4bfc607261e9cc.jpg",
-   "shows": [
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "3:25 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox The Avenues Cinema",
-     "url": "https://elcinema.com/en/theater/3101298/",
-     "date": "2026-11-25",
-     "time": "9:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "1:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "4:20 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "6:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "9:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Epix Dana Mall Cinema",
-     "url": "https://elcinema.com/en/theater/3101599/",
-     "date": "2026-11-25",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
-   "id": "2097821",
-   "title": "I, Object",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_7e2fd230251b1fe047614fbfe7099dddd1707e24b9e035eb16fef65c16ab8618.jpg",
-   "shows": [
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "10:15 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "2:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "6:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "11:45 am",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Seef Cinema",
-     "url": "https://elcinema.com/en/theater/3101521/",
-     "date": "2026-11-25",
-     "time": "7:15 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "2:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "8:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "10:00 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
    "id": "2103096",
    "title": "ENE Repeat",
    "poster": "https://media0110.elcinema.com/uploads/_150x200_9fc78cf5f51ba101406702cdb39e9958d2cea1d7c79c0bf449ba6b756d18c460.jpg",
@@ -2750,6 +2644,60 @@
      "url": "https://elcinema.com/en/theater/3101522/",
      "date": "2026-11-25",
      "time": "12:00 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2100835",
+   "title": "Laylat Bazet Khalis",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_96933f6883f235c3bafd444b42123319e9e2fb3b4efdd783bc0cfd9f366c9d72.jpg",
+   "shows": [
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "11:50 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "11:30 pm",
+     "exp": "THEATRE",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "price": null
+    }
+   ]
+  },
+  {
+   "id": "2096575",
+   "title": "Paper Tiger",
+   "poster": "https://media0110.elcinema.com/uploads/_150x200_806cf32cda4ee9e9a988debd706e79d227f7157761763866c497fbe5011bf72f.jpg",
+   "shows": [
+    {
+     "cinema": "Vox The Avenues Cinema",
+     "url": "https://elcinema.com/en/theater/3101298/",
+     "date": "2026-11-25",
+     "time": "11:15 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "11:30 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2780,23 +2728,7 @@
      "cinema": "Cineco Juffair Cinema",
      "url": "https://elcinema.com/en/theater/3101522/",
      "date": "2026-11-25",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
      "time": "8:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Cineco Juffair Cinema",
-     "url": "https://elcinema.com/en/theater/3101522/",
-     "date": "2026-11-25",
-     "time": "11:15 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2811,7 +2743,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "12:35 pm",
+     "time": "12:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2827,7 +2759,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "10:20 pm",
+     "time": "7:35 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2835,15 +2767,7 @@
      "cinema": "Vox The Avenues Cinema",
      "url": "https://elcinema.com/en/theater/3101298/",
      "date": "2026-11-25",
-     "time": "4:00 pm",
-     "exp": "THEATRE",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "1:15 pm",
+     "time": "9:40 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2851,7 +2775,15 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "6:00 pm",
+     "time": "2:55 pm",
+     "exp": "Standard",
+     "price": null
+    },
+    {
+     "cinema": "Vox Bahrain City Centre Cinema",
+     "url": "https://elcinema.com/en/theater/3101299/",
+     "date": "2026-11-25",
+     "time": "7:40 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2881,7 +2813,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "10:45 am",
+     "time": "12:25 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2889,15 +2821,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "3:30 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "10:45 pm",
+     "time": "5:10 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2943,7 +2867,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "1:00 pm",
+     "time": "1:30 pm",
      "exp": "Standard",
      "price": null
     },
@@ -2951,15 +2875,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "6:00 pm",
-     "exp": "Standard",
-     "price": null
-    },
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
+     "time": "6:30 pm",
      "exp": "Standard",
      "price": null
     }
@@ -2997,36 +2913,6 @@
    ]
   },
   {
-   "id": "2100835",
-   "title": "Laylat Bazet Khalis",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_96933f6883f235c3bafd444b42123319e9e2fb3b4efdd783bc0cfd9f366c9d72.jpg",
-   "shows": [
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
-   "id": "2096575",
-   "title": "Paper Tiger",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_806cf32cda4ee9e9a988debd706e79d227f7157761763866c497fbe5011bf72f.jpg",
-   "shows": [
-    {
-     "cinema": "Vox Bahrain City Centre Cinema",
-     "url": "https://elcinema.com/en/theater/3101299/",
-     "date": "2026-11-25",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "price": null
-    }
-   ]
-  },
-  {
    "id": "2103094",
    "title": "Sathyavan Savithiri",
    "poster": "https://media0110.elcinema.com/uploads/_150x200_ee0fceb6190ca81ab63d966fba88d9c10aa3fa4e864925e9adc40d30eb1d5638.jpg",
@@ -3050,7 +2936,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "10:15 am",
+     "time": "10:45 am",
      "exp": "Standard",
      "price": null
     },
@@ -3058,7 +2944,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "3:15 pm",
+     "time": "3:45 pm",
      "exp": "Standard",
      "price": null
     },
@@ -3066,7 +2952,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "8:15 pm",
+     "time": "8:45 pm",
      "exp": "Standard",
      "price": null
     }
@@ -3168,7 +3054,7 @@
      "cinema": "Vox Bahrain City Centre Cinema",
      "url": "https://elcinema.com/en/theater/3101299/",
      "date": "2026-11-25",
-     "time": "10:15 pm",
+     "time": "8:00 pm",
      "exp": "Standard",
      "price": null
     }
