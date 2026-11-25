@@ -1,8 +1,10 @@
-"""Collects 7 days of showtimes for every cinema in Bahrain from elCinema
-and writes them to data.json for the app page.
+"""Collects showtimes for every cinema in Bahrain and writes data.json for the app.
 
-elCinema loads the other days with JavaScript, so this uses a real
-(headless) Chromium browser and clicks each day tab."""
+Source today: elCinema (one page per cinema, a date dropdown for other days).
+Each film also gets its language/country so the app can hide Indian films.
+
+At the end it also visits each cinema chain's own website and saves what the
+site loads (debug/sites/) so direct scrapers can be written for each chain."""
 
 import datetime
 import json
@@ -21,23 +23,40 @@ UA = (
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "
     "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
 )
+DESKTOP_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+)
 
 # Only keep the Bahrain chains (the listing pages also show some ads for other countries).
 CHAINS = ["vox", "cineco", "epix", "mukta", "cinepolis", "cinépolis", "reel", "liwan"]
 
+# Each chain's own site, visited for reconnaissance.
+CHAIN_SITES = {
+    "vox": "https://bhr.voxcinemas.com/showtimes",
+    "cineco": "https://www.cineco.net/country-chooser.php?country=bhr",
+    "cinepolis": "https://cinepolisgulf.com/",
+    "epix": "https://www.epixcinemas.com/",
+    "mukta": "https://muktaa2cinemas.com/bahrain",
+    "reel": "https://www.reelcinemas.com/en-bh/",
+}
+NOISE = re.compile(r"google|doubleclick|facebook|analytics|hotjar|clarity|tiktok|snap|"
+                   r"criteo|adservice|gstatic|fonts\.|sentry|newrelic|onesignal|appier", re.I)
+
 THEATER_LINK = re.compile(r"^/en/theater/(\d{6,}|\d+/\d+/\d+)/?$")
 WORK_LINK = re.compile(r"^/en/work/(\d+)/?$")
+META_LINK = re.compile(r"/en/index/work/(language|country|genre)/")
 TIME_RE = re.compile(r"\b(\d{1,2}):(\d{2})\s*([ap]m)\b", re.I)
 PRICE_RE = re.compile(r"(\d+(?:\.\d+)?)\s*BHD", re.I)
 DAY_NAMES = "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday"
 DATE_RE = re.compile(rf"^({DAY_NAMES})\s+(\d{{1,2}})\s+([A-Za-z]+)$")
-EXPERIENCES = {
-    "standard", "imax", "max", "vip", "gold", "kids", "4dx", "screenx", "theatre",
-    "platinum", "dolby", "dolby atmos", "premium", "junior", "luxe", "3d", "2d", "family",
-}
 MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july",
      "august", "september", "october", "november", "december"], start=1)}
+
+INDIAN_LANGS = {"hindi", "tamil", "telugu", "malayalam", "kannada", "bengali", "marathi",
+                "punjabi", "gujarati", "odia", "urdu", "bhojpuri", "tulu", "konkani"}
+
 
 def to_iso(day_text, today):
     m = DATE_RE.match(day_text)
@@ -96,19 +115,20 @@ def find_theaters(page):
 
 
 def parse_html(html, today, forced_date=None):
-    """Walks the page in order: film link -> date heading -> format -> times."""
+    """Walks the page in order: film link -> language/country -> date -> format -> times."""
     soup = BeautifulSoup(html, "html.parser")
     if not soup.body:
-        return None, [], {}
+        return None, [], {}, {}
     h1 = soup.find("h1")
     name = h1.get_text(" ", strip=True) if h1 else None
 
-    shows, posters = [], {}
+    shows, posters, meta = [], {}, {}
     movie, date, exp = None, forced_date, "Standard"
     for el in soup.body.descendants:
         if isinstance(el, Tag):
             if el.name == "a":
-                m = WORK_LINK.match((el.get("href") or "").replace(BASE, "").split("?")[0])
+                href = (el.get("href") or "").replace(BASE, "")
+                m = WORK_LINK.match(href.split("?")[0])
                 if m:
                     img = el.find("img")
                     if img:
@@ -118,21 +138,33 @@ def parse_html(html, today, forced_date=None):
                     title = el.get_text(" ", strip=True)
                     if title:
                         movie = {"id": m.group(1), "title": title}
+                        meta.setdefault(movie["id"], {"lang": [], "country": [], "genres": []})
                         exp = "Standard"
+                    continue
+                mm = META_LINK.search(href)
+                if mm and movie:
+                    key = {"language": "lang", "country": "country", "genre": "genres"}[mm.group(1)]
+                    val = el.get_text(" ", strip=True)
+                    if val and val not in meta[movie["id"]][key]:
+                        meta[movie["id"]][key].append(val)
+            elif el.name == "h6" and "section-title" in (el.get("class") or []):
+                txt = el.get_text(" ", strip=True)
+                if txt:
+                    exp = txt                       # e.g. "VIP", "IMAX", "Standard Arabic Dubbed"
             continue
         if not isinstance(el, NavigableString) or isinstance(el, Comment):
             continue
-        if el.parent and el.parent.name in ("script", "style", "noscript", "option", "select"):
+        parent = el.parent
+        if parent and parent.name in ("script", "style", "noscript", "option", "select"):
             continue
+        if parent and parent.name == "li" and "exp-color" in (parent.get("class") or []):
+            continue                                # the "Available Experiences" summary
         text = " ".join(el.split())
         if not text:
             continue
         iso = to_iso(text, today)
         if iso:
             date = iso
-            continue
-        if text.lower() in EXPERIENCES:
-            exp = text
             continue
         if movie and date:
             price = PRICE_RE.search(text)
@@ -142,7 +174,7 @@ def parse_html(html, today, forced_date=None):
                     "time": f"{int(h)}:{mnt} {ap.lower()}", "exp": exp,
                     "price": price.group(1) if price else None,
                 })
-    return name, shows, posters
+    return name, shows, posters, meta
 
 
 SELECTOR = "#theater-showtimes-date-selector"
@@ -153,16 +185,20 @@ WAIT_FOR_DAY_JS = """(lbl) => [...document.querySelectorAll('h2, h4')]
 def scrape_theater(page, url, today, debug):
     """elCinema shows one day at a time; the other days are in a date dropdown."""
     if not load(page, url):
-        return None, [], {}
-    name, all_shows, posters = None, [], {}
+        return None, [], {}, {}
+    name, all_shows, posters, meta = None, [], {}, {}
 
     def collect(forced=None):
         nonlocal name
-        n, s, p = parse_html(page.content(), today, forced)
+        n, s, p, mt = parse_html(page.content(), today, forced)
         name = name or n
         all_shows.extend(s)
         for k, v in p.items():
             posters.setdefault(k, v)
+        for k, v in mt.items():
+            cur = meta.setdefault(k, {"lang": [], "country": [], "genres": []})
+            for f in cur:
+                cur[f] += [x for x in v[f] if x not in cur[f]]
         return len(s)
 
     options = []
@@ -204,7 +240,66 @@ def scrape_theater(page, url, today, debug):
             collect(value)
         if debug is not None and "html_after" not in debug:
             debug["html_after"] = page.content()
-    return name, all_shows, posters
+    return name, all_shows, posters, meta
+
+
+def is_indian(m):
+    langs = {x.lower() for x in m.get("lang", [])}
+    return "India" in m.get("country", []) or bool(langs & INDIAN_LANGS)
+
+
+def probe_chain_sites(browser):
+    """Saves what each chain's website loads, so direct scrapers can be written later."""
+    os.makedirs("debug/sites", exist_ok=True)
+    for key, url in CHAIN_SITES.items():
+        report = {"start": url}
+        ctx = browser.new_context(user_agent=DESKTOP_UA, locale="en-US",
+                                  viewport={"width": 1366, "height": 900})
+        page = ctx.new_page()
+        responses = []
+        page.on("response", lambda r: responses.append(r))
+        try:
+            resp = page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            report["status"] = resp.status if resp else None
+            try:
+                page.wait_for_load_state("networkidle", timeout=20000)
+            except Exception:
+                pass
+            for _ in range(4):                       # trigger lazy loading
+                page.mouse.wheel(0, 2500)
+                page.wait_for_timeout(1200)
+            report["final_url"] = page.url
+            report["title"] = page.title()
+            report["links"] = page.eval_on_selector_all(
+                "a[href]", "as => [...new Set(as.map(a => a.href))]")[:400]
+            html = page.content()
+            with open(f"debug/sites/{key}.html", "w", encoding="utf-8") as f:
+                f.write(html[:600000])
+        except Exception as e:
+            report["error"] = str(e)[:500]
+        calls = []
+        for r in responses:
+            try:
+                if NOISE.search(r.url):
+                    continue
+                ct = r.headers.get("content-type", "")
+                if r.request.resource_type not in ("xhr", "fetch") and "json" not in ct:
+                    continue
+                body = ""
+                try:
+                    body = r.text()[:6000]
+                except Exception:
+                    pass
+                calls.append({"url": r.url, "method": r.request.method, "status": r.status,
+                              "type": ct, "post": (r.request.post_data or "")[:1000], "body": body})
+            except Exception:
+                pass
+        report["api_calls"] = calls[:120]
+        with open(f"debug/sites/{key}.json", "w", encoding="utf-8") as f:
+            json.dump(report, f, ensure_ascii=False, indent=1)
+        print(f"  probe {key}: status={report.get('status')} api_calls={len(calls)} "
+              f"error={report.get('error', '')[:80]}")
+        ctx.close()
 
 
 def main():
@@ -216,18 +311,20 @@ def main():
         browser = pw.chromium.launch()
         ctx = browser.new_context(user_agent=UA, locale="en-US", viewport={"width": 430, "height": 932})
         page = ctx.new_page()
-        xhr = []
-        page.on("request", lambda r: xhr.append(r.url) if r.resource_type in ("xhr", "fetch") else None)
 
         theaters = find_theaters(page)
         print(f"Found {len(theaters)} cinemas")
 
-        movies, cinemas, debug = {}, set(), {}
+        movies, cinemas, debug, meta_all = {}, set(), {}, {}
         for i, (url, listed) in enumerate(theaters.items()):
-            name, shows, posters = scrape_theater(page, url, today, debug if i == 0 else None)
+            name, shows, posters, meta = scrape_theater(page, url, today, debug if i == 0 else None)
             name = name or listed
             days = sorted({s["date"] for s in shows})
-            print(f"  {name}: {len(shows)} showtimes over {len(days)} days {days[:1]}..{days[-1:]}")
+            print(f"  {name}: {len(shows)} showtimes over {len(days)} days")
+            for k, v in meta.items():
+                cur = meta_all.setdefault(k, {"lang": [], "country": [], "genres": []})
+                for f in cur:
+                    cur[f] += [x for x in v[f] if x not in cur[f]]
             for s in shows:
                 if not (today.isoformat() <= s["date"] <= last):
                     continue
@@ -238,12 +335,24 @@ def main():
                          "exp": s["exp"], "price": s["price"]}
                 if entry not in mv["shows"]:
                     mv["shows"].append(entry)
+        ctx.close()
+
+        try:
+            probe_chain_sites(browser)
+        except Exception as e:
+            print(f"Probe failed (ignored): {e}")
         browser.close()
 
-    # Save a sample page so problems can be diagnosed later.
+    for m in movies.values():
+        md = meta_all.get(m["id"], {})
+        m["lang"] = md.get("lang", [])
+        m["country"] = md.get("country", [])
+        m["genres"] = md.get("genres", [])
+        m["indian"] = is_indian(m)
+
     os.makedirs("debug", exist_ok=True)
     with open("debug/info.json", "w", encoding="utf-8") as f:
-        json.dump({"tabs": debug.get("tabs"), "xhr": sorted(set(xhr))[:200]}, f, indent=1)
+        json.dump({"tabs": debug.get("tabs")}, f, indent=1)
     for k in ("html_before", "html_after"):
         if debug.get(k):
             with open(f"debug/{k}.html", "w", encoding="utf-8") as f:
@@ -262,7 +371,8 @@ def main():
             "movies": out,
         }, f, ensure_ascii=False, indent=1)
     days = sorted({s["date"] for m in out for s in m["shows"]})
-    print(f"Saved {len(out)} films, {total} showtimes, {len(cinemas)} cinemas, days: {days}")
+    print(f"Saved {len(out)} films ({sum(m['indian'] for m in out)} Indian), "
+          f"{total} showtimes, {len(cinemas)} cinemas, days: {days}")
 
 
 if __name__ == "__main__":

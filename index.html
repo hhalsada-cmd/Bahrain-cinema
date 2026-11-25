@@ -47,6 +47,15 @@
   .time.past { opacity:.35; text-decoration:line-through; }
   .time small { color:var(--muted); margin-left:4px; }
   footer { color:var(--muted); font-size:12px; text-align:center; padding:10px 16px 24px; }
+  .filters { padding-top:8px; }
+  .filters .chip { padding:5px 11px; font-size:13px; background:transparent; border-color:var(--line); }
+  .filters .chip.on { background:var(--text); color:var(--bg); border-color:var(--text); }
+  .filters .sep { flex:0 0 1px; background:var(--line); margin:4px 2px; }
+  .badges { display:flex; flex-wrap:wrap; gap:4px; margin-top:4px; }
+  .badge { font-size:10.5px; font-weight:600; letter-spacing:.3px; padding:2px 6px; border-radius:5px; background:var(--chip); color:var(--muted); }
+  .badge.hot { background:#3a1215; color:#ff8a90; }
+  .note { color:var(--muted); font-size:12.5px; text-align:center; margin:16px 0 0; }
+  .note button { background:none; border:0; color:var(--accent); font-size:12.5px; padding:0; cursor:pointer; }
 </style>
 </head>
 <body>
@@ -56,12 +65,40 @@
     <input class="search" id="search" type="search" placeholder="Search films" autocomplete="off">
   </div>
   <div class="chips" id="dates"></div>
+  <div class="chips filters" id="filters"></div>
 </header>
 <main id="view"><p class="empty">Loading showtimes…</p></main>
 <footer id="foot"></footer>
 
 <script>
-const state = { data:null, date:null, q:"" };
+function load(k,d){ try{ const v=localStorage.getItem(k); return v===null?d:JSON.parse(v); }catch(e){ return d; } }
+function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+const state = { data:null, date:null, q:"", hideIndian:load("hideIndian",true), fmt:"All" };
+
+// Groups each cinema's own format names into a few filter buttons.
+const FORMATS = [
+  ["IMAX", /imax/i], ["MAX", /\bmax\b/i], ["4DX", /4dx/i], ["ScreenX", /screen\s*x/i], ["3D", /\b3d\b/i],
+  ["VIP", /vip|theatre|gold|platinum|luxe|premium|prestige|velvet|suite|recliner/i], ["Kids", /kids|junior|family/i],
+];
+function fmtGroup(exp){ for(const [k,rx] of FORMATS) if(rx.test(exp||"")) return k; return "Standard"; }
+const FMT_ORDER = ["Standard","IMAX","MAX","VIP","3D","4DX","ScreenX","Kids"];
+const HOT = new Set(["IMAX","MAX","VIP","4DX","ScreenX"]);
+function dayShows(m){ return m.shows.filter(s=>s.date===state.date && (state.fmt==="All" || fmtGroup(s.exp)===state.fmt)); }
+function visibleMovies(){ return state.data.movies.filter(m=>!(state.hideIndian && m.indian)); }
+
+function renderFilters(){
+  const box=document.getElementById("filters"); box.innerHTML="";
+  const fm=new Set(); visibleMovies().forEach(m=>m.shows.forEach(s=>{ if(s.date===state.date) fm.add(fmtGroup(s.exp)); }));
+  if(state.fmt!=="All" && !fm.has(state.fmt)) state.fmt="All";
+  const ind=$("button","chip"+(state.hideIndian?" on":""),state.hideIndian?"Indian films hidden":"Hide Indian films");
+  ind.onclick=()=>{ state.hideIndian=!state.hideIndian; save("hideIndian",state.hideIndian); route(false); };
+  box.append(ind,$("span","sep"));
+  ["All",...FMT_ORDER.filter(f=>fm.has(f))].forEach(f=>{
+    const c=$("button","chip"+(state.fmt===f?" on":""),f==="All"?"All formats":f==="VIP"?"VIP / Luxury":f);
+    c.onclick=()=>{ state.fmt=f; route(false); };
+    box.appendChild(c);
+  });
+}
 const $ = (tag, cls, text) => { const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; };
 
 function todayISO(){ const d=new Date(Date.now()+3*3600e3); return d.toISOString().slice(0,10); }
@@ -101,19 +138,31 @@ function renderList(){
   document.getElementById("controls").style.display="";
   const view=document.getElementById("view"); view.innerHTML="";
   const q=state.q.trim().toLowerCase();
-  const list=state.data.movies.filter(m=>m.shows.some(s=>s.date===state.date) && (!q || m.title.toLowerCase().includes(q)));
-  if(!list.length){ view.appendChild($("p","empty",dates().includes(state.date)?"No films match your search.":"Times for this day aren't out yet. Cinemas usually publish them a few days ahead.")); return; }
-  const grid=$("div","grid");
-  list.forEach(m=>{
-    const shows=m.shows.filter(s=>s.date===state.date);
-    const n=new Set(shows.map(s=>s.cinema)).size;
-    const card=$("div","card");
-    const p=$("div","poster"); if(m.poster) p.style.backgroundImage=`url("${encodeURI(m.poster)}")`; else p.textContent=m.title;
-    card.append(p,$("h3",null,m.title),$("p",null,`${n} cinema${n>1?"s":""} · ${shows.length} shows`));
-    card.onclick=()=>{ location.hash="film/"+m.id; };
-    grid.appendChild(card);
-  });
-  view.appendChild(grid);
+  const list=visibleMovies().filter(m=>dayShows(m).length && (!q || m.title.toLowerCase().includes(q)));
+  const hidden=state.hideIndian?state.data.movies.filter(m=>m.indian && m.shows.some(s=>s.date===state.date)).length:0;
+  if(!list.length){
+    view.appendChild($("p","empty",!dates().includes(state.date)?"Times for this day aren't out yet. Cinemas usually publish them a few days ahead.":q?"No films match your search.":"Nothing in this format today. Try another format or day."));
+  } else {
+    const grid=$("div","grid");
+    list.forEach(m=>{
+      const shows=dayShows(m);
+      const n=new Set(shows.map(s=>s.cinema)).size;
+      const card=$("div","card");
+      const p=$("div","poster"); if(m.poster) p.style.backgroundImage=`url("${encodeURI(m.poster)}")`; else p.textContent=m.title;
+      const fm=FMT_ORDER.filter(f=>f!=="Standard" && m.shows.some(s=>s.date===state.date && fmtGroup(s.exp)===f));
+      const b=$("div","badges"); fm.forEach(f=>b.appendChild($("span","badge"+(HOT.has(f)?" hot":""),f)));
+      if(m.lang && m.lang[0] && !/english/i.test(m.lang[0])) b.appendChild($("span","badge",m.lang[0]));
+      card.append(p,$("h3",null,m.title),$("p",null,`${n} cinema${n>1?"s":""} · ${shows.length} shows`),b);
+      card.onclick=()=>{ location.hash="film/"+m.id; };
+      grid.appendChild(card);
+    });
+    view.appendChild(grid);
+  }
+  if(hidden){
+    const note=$("p","note",`${hidden} Indian film${hidden>1?"s":""} hidden · `);
+    const sh=$("button",null,"Show them"); sh.onclick=()=>{ state.hideIndian=false; save("hideIndian",false); route(false); };
+    note.appendChild(sh); view.appendChild(note);
+  }
 }
 
 function renderFilm(id){
@@ -124,9 +173,11 @@ function renderFilm(id){
   const back=$("button","back","‹ All films"); back.onclick=()=>history.length>1?history.back():(location.hash=""); view.appendChild(back);
   const hero=$("div","hero"); const p=$("div","poster"); if(m.poster) p.style.backgroundImage=`url("${encodeURI(m.poster)}")`;
   const info=$("div"); info.append($("h2",null,m.title),$("p",null,dayLabel(state.date)));
+  const facts=[(m.lang||[]).join(", "),(m.country||[]).join(", "),(m.genres||[]).slice(0,3).join(", ")].filter(Boolean);
+  if(facts.length) info.appendChild($("p","exp",facts.join(" · ")));
   hero.append(p,info); view.appendChild(hero);
-  const shows=m.shows.filter(s=>s.date===state.date);
-  if(!shows.length){ view.appendChild($("p","empty","Not showing on this day. Pick a brighter date above.")); return; }
+  const shows=dayShows(m);
+  if(!shows.length){ view.appendChild($("p","empty",state.fmt==="All"?"Not showing on this day. Pick a brighter date above.":"Not showing in "+state.fmt+" on this day. Try All formats.")); return; }
   const byCinema={}; shows.forEach(s=>((byCinema[s.cinema]??={})[s.exp]??=[]).push(s));
   Object.keys(byCinema).sort().forEach(c=>{
     const box=$("div","cinema");
@@ -148,11 +199,12 @@ function renderFilm(id){
   });
 }
 
-function route(){
+function route(scroll=true){
   const h=location.hash.slice(1);
   renderDates(h.startsWith("film/")?h.slice(5):null);
+  renderFilters();
   if(h.startsWith("film/")) renderFilm(h.slice(5)); else renderList();
-  window.scrollTo(0,0);
+  if(scroll) window.scrollTo(0,0);
 }
 
 document.getElementById("search").addEventListener("input",e=>{ state.q=e.target.value; renderList(); });
