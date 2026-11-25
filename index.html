@@ -46,7 +46,19 @@
   .time { padding:6px 11px; border-radius:9px; border:1px solid var(--line); font-size:14px; font-variant-numeric:tabular-nums; }
   .time.past { opacity:.35; text-decoration:line-through; }
   .time small { color:var(--muted); margin-left:4px; }
-  footer { color:var(--muted); font-size:12px; text-align:center; padding:10px 16px 24px; }
+  footer { color:var(--muted); font-size:12px; text-align:center; padding:10px 16px 32px; }
+  .banner { margin:12px 16px 0; padding:10px 12px; border-radius:12px; background:#3a2a0c; color:#ffd27a; font-size:13px; cursor:pointer; }
+  .health { max-width:420px; margin:10px auto 0; background:var(--card); border-radius:14px; padding:6px 12px; text-align:left; }
+  .hrow { display:flex; align-items:center; gap:10px; padding:8px 0; border-top:1px solid var(--line); }
+  .hrow:first-child { border-top:0; }
+  .hicon { width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex:0 0 20px; }
+  .hrow.ok .hicon { background:#123d22; color:#5be08a; }
+  .hrow.fallback .hicon { background:#3a2a0c; color:#ffd27a; }
+  .hrow.fail .hicon { background:#3a1215; color:#ff8a90; }
+  .hname { color:var(--text); font-size:13.5px; font-weight:600; flex:1; }
+  .hlabel { font-size:12px; }
+  .hnote { color:var(--muted); font-size:11.5px; margin:-4px 0 6px 30px; }
+  .cinema .hnote { margin:0 0 4px; color:#ffd27a; }
   .filters { padding-top:8px; }
   .filters .chip { padding:5px 11px; font-size:13px; background:transparent; border-color:var(--line); }
   .filters .chip.on { background:var(--text); color:var(--bg); border-color:var(--text); }
@@ -67,6 +79,7 @@
   <div class="chips" id="dates"></div>
   <div class="chips filters" id="filters"></div>
 </header>
+<div id="banner" class="banner" style="display:none"></div>
 <main id="view"><p class="empty">Loading showtimes…</p></main>
 <footer id="foot"></footer>
 
@@ -77,8 +90,9 @@ const state = { data:null, date:null, q:"", hideIndian:load("hideIndian",true), 
 
 // Groups each cinema's own format names into a few filter buttons.
 const FORMATS = [
-  ["IMAX", /imax/i], ["MAX", /\bmax\b/i], ["4DX", /4dx/i], ["ScreenX", /screen\s*x/i], ["3D", /\b3d\b/i],
-  ["VIP", /vip|theatre|gold|platinum|luxe|premium|prestige|velvet|suite|recliner/i], ["Kids", /kids|junior|family/i],
+  ["IMAX", /imax/i], ["MAX", /\bmax\b|macro/i], ["4DX", /4dx|\b4d\b|e-?motion/i], ["ScreenX", /screen\s*x/i], ["3D", /\b3d\b/i],
+  ["VIP", /vip|theatre|gold|platinum|diamond|luxe|premium|prestige|velvet|suite|recliner|couple|lounge/i],
+  ["Kids", /kids|junior|family|kinder/i],
 ];
 function fmtGroup(exp){ for(const [k,rx] of FORMATS) if(rx.test(exp||"")) return k; return "Standard"; }
 const FMT_ORDER = ["Standard","IMAX","MAX","VIP","3D","4DX","ScreenX","Kids"];
@@ -118,7 +132,46 @@ const BOOK = [
   [/reel/i, () => "https://www.reelcinemas.com/en-bh/"],
   [/cin[eé]polis/i, () => "https://cinepolisgulf.com/"],
 ];
-function bookUrl(show, title){ for(const [rx,f] of BOOK) if(rx.test(show.cinema)) return f(title); return show.url || "https://elcinema.com/en/theater/6/"; }
+function bookUrl(show, title){ if(show.book) return show.book; for(const [rx,f] of BOOK) if(rx.test(show.cinema)) return f(title); return "https://elcinema.com/en/theater/6/"; }
+
+// Health of each cinema chain's data: ok = straight from the cinema, fallback = elCinema stand-in, fail = missing.
+const CHAINS = ["VOX","Cineco","Cinépolis","Epix","Mukta A2","Reel"];
+function healthOf(d){
+  const h=d.health||{}, out=[];
+  const ageH=(Date.now()-new Date(d.checked||d.updated).getTime())/36e5;
+  CHAINS.forEach(c=>{
+    const x=h[c]; let st=x?x.status:"fail", note=x?x.note:"No data yet";
+    if(ageH>30){ st="fail"; note="Not refreshed for "+Math.round(ageH)+" hours"; }
+    else if(d.stale){ st="fail"; }
+    out.push({chain:c, st, note, shows:x?x.shows:0, days:x?x.days:0});
+  });
+  return out;
+}
+function renderHealth(d){
+  const hs=healthOf(d), bad=hs.filter(x=>x.st!=="ok");
+  const banner=document.getElementById("banner");
+  if(bad.length){
+    banner.style.display="";
+    banner.textContent="";
+    banner.append($("strong",null,"⚠ "+bad.map(x=>x.chain).join(", ")+(bad.length>1?" need":" needs")+" attention"),
+                  $("span",null," · tap for details"));
+    banner.onclick=()=>document.getElementById("foot").scrollIntoView({behavior:"smooth"});
+  } else banner.style.display="none";
+  const foot=document.getElementById("foot"); foot.innerHTML="";
+  const up=new Date(d.updated);
+  foot.appendChild($("p",null,`Showtimes updated ${up.toLocaleString("en-GB",{timeZone:"Asia/Bahrain",weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}`));
+  const list=$("div","health");
+  hs.forEach(x=>{
+    const row=$("div","hrow "+x.st);
+    const icon=x.st==="ok"?"✓":x.st==="fallback"?"!":"✕";
+    const label=x.st==="ok"?`${x.shows} shows · ${x.days} day${x.days===1?"":"s"}`:
+                x.st==="fallback"?`Using elCinema stand-in · ${x.days} day${x.days===1?"":"s"}`:"Not working";
+    row.append($("span","hicon",icon),$("span","hname",x.chain),$("span","hlabel",label));
+    list.appendChild(row);
+    if(x.st!=="ok" && x.note) list.appendChild($("div","hnote",x.note));
+  });
+  foot.appendChild(list);
+}
 
 function renderDates(filmId){
   const box=document.getElementById("dates"); box.innerHTML="";
@@ -184,6 +237,7 @@ function renderFilm(id){
     const first=Object.values(byCinema[c])[0][0], link=bookUrl(first,m.title);
     const row=$("div","row"); const bk=$("a","book","Book ›"); bk.href=link; bk.target="_blank"; bk.rel="noopener";
     row.append($("h4",null,c),bk); box.appendChild(row);
+    if(first.src==="elcinema") box.appendChild($("div","hnote","Times from elCinema, not the cinema itself. Double-check before booking."));
     Object.entries(byCinema[c]).forEach(([exp,list])=>{
       box.appendChild($("div","exp",exp));
       const t=$("div","times");
@@ -213,8 +267,7 @@ window.addEventListener("hashchange",route);
 fetch("data.json?v="+Date.now()).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
   state.data=d;
   const ds=dates(); const t=todayISO(); state.date=ds.includes(t)?t:(ds[0]||t);
-  const up=new Date(d.updated);
-  document.getElementById("foot").textContent=`${d.cinemas.length} cinemas · updated ${up.toLocaleString("en-GB",{timeZone:"Asia/Bahrain",weekday:"short",hour:"2-digit",minute:"2-digit"})}`;
+  renderHealth(d);
   route();
 }).catch(()=>{ document.getElementById("view").innerHTML='<p class="empty">No showtimes yet. The first update hasn\'t run.</p>'; });
 </script>
