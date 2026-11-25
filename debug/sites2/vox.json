@@ -1,0 +1,20 @@
+{
+ "pages": [
+  {
+   "step": "goto",
+   "arg": "https://bhr.voxcinemas.com/",
+   "error": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://bhr.voxcinemas.com/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+   "step": "goto",
+   "arg": "https://bhr.voxcinemas.com/showtimes",
+   "error": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://bhr.voxcinemas.com/showtimes\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+   "step": "goto",
+   "arg": "https://bhr.voxcinemas.com/movies/whats-on",
+   "error": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://bhr.voxcinemas.com/movies/whats-on\", waiting until \"domcontentloaded\"\n"
+  }
+ ],
+ "calls": []
+}
