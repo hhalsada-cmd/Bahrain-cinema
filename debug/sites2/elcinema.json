@@ -1,0 +1,23 @@
+{
+ "chains": [
+  "Cinépolis",
+  "VOX"
+ ],
+ "lists": [
+  [
+   "https://elcinema.com/en/theater/6/",
+   200
+  ],
+  [
+   "https://elcinema.com/en/theater/6/?page=2",
+   200
+  ],
+  [
+   "https://elcinema.com/en/theater/6/?page=3",
+   200
+  ]
+ ],
+ "theaters": {},
+ "errors": [],
+ "found": {}
+}

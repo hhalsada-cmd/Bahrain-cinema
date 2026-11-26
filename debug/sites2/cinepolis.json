@@ -2,40 +2,86 @@
  "pages": [
   {
    "step": "goto",
-   "arg": "https://www.cinepolisgulf.com/",
+   "arg": "https://bahrain.cinepolisgulf.com/",
    "status": 200,
-   "url": "https://www.cinepolisgulf.com/",
-   "title": "Cinépolis Gulf",
-   "text": "Choose your Country\n\nاختر بلدك\n\n2026 Copyright © Cinépolis. All rights reserved.",
-   "links": []
+   "url": "https://bahrain.cinepolisgulf.com/",
+   "title": "Cinépolis Bahrain",
+   "text": "English\n BAHRAIN\nFacebook\nInstagram\nX (formerly Twitter)\nMovies\nPromotions\nEvents\nExperiences\nLocations\nSIGN-IN | SIGN-UP\nCinepolis Gulf – Book Movie Tickets Online\nSelect Cinema\nSelect Movie\nSelect Date\nSelect Time\nQUICK BOOK\nNow Showing\nView more\n\nNew shows will be available soon. Stay tuned!\n\nAdvance Booking\nView more\n\nAdvance bookings will start soon, get your popcorn ready before the seats run out.\n\nComing Soon\nView more\n\nNew Movies are Coming Soon\n\nTerms of Service\nPrivacy Policy\nFeedback\nFAQ\nAbout Us\n2026 Copyright © Cinépolis. All rights reserved.\nFacebook\nInstagram\nX (formerly Twitter)",
+   "links": [
+    "https://www.facebook.com/CinepolisGULF/",
+    "https://www.instagram.com/cinepolis.bahrain/?hl=en",
+    "https://twitter.com/cinepolisgulf?lang=en",
+    "https://bahrain.cinepolisgulf.com/movies-list",
+    "https://bahrain.cinepolisgulf.com/promotion",
+    "https://bahrain.cinepolisgulf.com/book-event",
+    "https://bahrain.cinepolisgulf.com/experiences",
+    "https://bahrain.cinepolisgulf.com/cinema",
+    "https://bahrain.cinepolisgulf.com/about-us",
+    "https://bahrain.cinepolisgulf.com/faq",
+    "https://bahrain.cinepolisgulf.com/feedback",
+    "https://bahrain.cinepolisgulf.com/tnc",
+    "https://bahrain.cinepolisgulf.com/privacy-policy",
+    "https://bahrain.cinepolisgulf.com/",
+    "https://bahrain.cinepolisgulf.com/movies-list?type=now-showing",
+    "https://bahrain.cinepolisgulf.com/movies-list?type=advance-booking",
+    "https://bahrain.cinepolisgulf.com/movies-list?type=coming-soon"
+   ]
+  },
+  {
+   "step": "goto",
+   "arg": "https://bahrain.cinepolisgulf.com/now-showing",
+   "status": 200,
+   "url": "https://bahrain.cinepolisgulf.com/now-showing",
+   "title": "404 Not Found - Cinepolis",
+   "text": "English\n BAHRAIN\nFacebook\nInstagram\nX (formerly Twitter)\nMovies\nPromotions\nEvents\nExperiences\nLocations\nSIGN-IN | SIGN-UP\n404\nThe page you're looking for cannot be found\nHOME\nTerms of Service\nPrivacy Policy\nFeedback\nFAQ\nAbout Us\n2026 Copyright © Cinépolis. All rights reserved.\nFacebook\nInstagram\nX (formerly Twitter)",
+   "links": [
+    "https://www.facebook.com/CinepolisGULF/",
+    "https://www.instagram.com/cinepolis.bahrain/?hl=en",
+    "https://twitter.com/cinepolisgulf?lang=en",
+    "https://bahrain.cinepolisgulf.com/movies-list",
+    "https://bahrain.cinepolisgulf.com/promotion",
+    "https://bahrain.cinepolisgulf.com/book-event",
+    "https://bahrain.cinepolisgulf.com/experiences",
+    "https://bahrain.cinepolisgulf.com/cinema",
+    "https://bahrain.cinepolisgulf.com/about-us",
+    "https://bahrain.cinepolisgulf.com/faq",
+    "https://bahrain.cinepolisgulf.com/feedback",
+    "https://bahrain.cinepolisgulf.com/tnc",
+    "https://bahrain.cinepolisgulf.com/privacy-policy"
+   ]
+  },
+  {
+   "step": "click_css",
+   "arg": "a[href*='movie'], a[href*='film']",
+   "url": "https://bahrain.cinepolisgulf.com/movies-list",
+   "title": "Movies List - Cinépolis",
+   "text": "English\n BAHRAIN\nFacebook\nInstagram\nX (formerly Twitter)\nMovies\nPromotions\nEvents\nExperiences\nLocations\nSIGN-IN | SIGN-UP\nNow Showing\nAdvance Bookings\nComing Soon\nNew shows will be available soon. Stay tuned!\nTerms of Service\nPrivacy Policy\nFeedback\nFAQ\nAbout Us\n2026 Copyright © Cinépolis. All rights reserved.\nFacebook\nInstagram\nX (formerly Twitter)",
+   "links": [
+    "https://www.facebook.com/CinepolisGULF/",
+    "https://www.instagram.com/cinepolis.bahrain/?hl=en",
+    "https://twitter.com/cinepolisgulf?lang=en",
+    "https://bahrain.cinepolisgulf.com/movies-list",
+    "https://bahrain.cinepolisgulf.com/promotion",
+    "https://bahrain.cinepolisgulf.com/book-event",
+    "https://bahrain.cinepolisgulf.com/experiences",
+    "https://bahrain.cinepolisgulf.com/cinema",
+    "https://bahrain.cinepolisgulf.com/about-us",
+    "https://bahrain.cinepolisgulf.com/faq",
+    "https://bahrain.cinepolisgulf.com/feedback",
+    "https://bahrain.cinepolisgulf.com/tnc",
+    "https://bahrain.cinepolisgulf.com/privacy-policy",
+    "https://bahrain.cinepolisgulf.com/movies-list#"
+   ]
   },
   {
    "step": "click_text",
-   "arg": "^\\s*Bahrain|البحرين",
-   "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^\\s*Bahrain|البحرين\", re.IGNORECASE)).first\n"
-  },
-  {
-   "step": "goto",
-   "arg": "https://www.cinepolisgulf.com/bh",
-   "status": 200,
-   "url": "https://www.cinepolisgulf.com/bh",
-   "title": "Cinépolis Gulf",
-   "text": "Choose your Country\n\nاختر بلدك\n\n2026 Copyright © Cinépolis. All rights reserved.",
-   "links": []
-  },
-  {
-   "step": "goto",
-   "arg": "https://www.cinepolisgulf.com/en/bh",
-   "status": 200,
-   "url": "https://www.cinepolisgulf.com/en/bh",
-   "title": "Cinépolis Gulf",
-   "text": "Choose your Country\n\nاختر بلدك\n\n2026 Copyright © Cinépolis. All rights reserved.",
-   "links": []
+   "arg": "^\\s*(\\d{1,2}:\\d{2}|book)",
+   "error": "Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^\\s*(\\d{1,2}:\\d{2}|book)\", re.IGNORECASE)).first\n"
   }
  ],
  "calls": [
   {
-   "url": "https://www.cinepolisgulf.com/",
+   "url": "https://bahrain.cinepolisgulf.com/",
    "method": "GET",
    "status": 200,
    "type": "text/html; charset=utf-8",
@@ -43,15 +89,7 @@
    "body": ""
   },
   {
-   "url": "https://www.cinepolisgulf.com/bh",
-   "method": "GET",
-   "status": 200,
-   "type": "text/html; charset=utf-8",
-   "post": "",
-   "body": ""
-  },
-  {
-   "url": "https://www.cinepolisgulf.com/en/bh",
+   "url": "https://bahrain.cinepolisgulf.com/now-showing",
    "method": "GET",
    "status": 200,
    "type": "text/html; charset=utf-8",

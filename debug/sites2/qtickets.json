@@ -1,0 +1,23 @@
+{
+ "pages": [
+  {
+   "step": "goto",
+   "arg": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+   "status": 403,
+   "url": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+   "title": "403 Forbidden",
+   "text": "403 Forbidden",
+   "links": []
+  }
+ ],
+ "calls": [
+  {
+   "url": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+   "method": "GET",
+   "status": 403,
+   "type": "text/html",
+   "post": "",
+   "body": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n"
+  }
+ ]
+}
