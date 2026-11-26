@@ -90,9 +90,9 @@ const state = { data:null, date:null, q:"", hideIndian:load("hideIndian",true), 
 
 // Groups each cinema's own format names into a few filter buttons.
 const FORMATS = [
-  ["IMAX", /imax/i], ["MAX", /\bmax\b|macro/i], ["4DX", /4dx|\b4d\b|e-?motion/i], ["ScreenX", /screen\s*x/i], ["3D", /\b3d\b/i],
   ["VIP", /vip|theatre|gold|platinum|diamond|luxe|premium|prestige|velvet|suite|recliner|couple|lounge/i],
-  ["Kids", /kids|junior|family|kinder/i],
+  ["IMAX", /imax/i], ["MAX", /\bmax\b|macro|\bxl\b/i], ["4DX", /4dx|\b4d\b|e-?motion/i], ["ScreenX", /screen\s*x/i],
+  ["Kids", /kids|junior|family|kinder/i], ["3D", /\b3d\b/i],
 ];
 function fmtGroup(exp){ for(const [k,rx] of FORMATS) if(rx.test(exp||"")) return k; return "Standard"; }
 const FMT_ORDER = ["Standard","IMAX","MAX","VIP","3D","4DX","ScreenX","Kids"];
@@ -108,7 +108,7 @@ function renderFilters(){
   ind.onclick=()=>{ state.hideIndian=!state.hideIndian; save("hideIndian",state.hideIndian); route(false); };
   box.append(ind,$("span","sep"));
   ["All",...FMT_ORDER.filter(f=>fm.has(f))].forEach(f=>{
-    const c=$("button","chip"+(state.fmt===f?" on":""),f==="All"?"All formats":f==="VIP"?"VIP / Luxury":f);
+    const c=$("button","chip"+(state.fmt===f?" on":""),f==="All"?"All formats":f==="VIP"?"VIP / Luxury":f==="MAX"?"MAX / XL":f);
     c.onclick=()=>{ state.fmt=f; route(false); };
     box.appendChild(c);
   });

@@ -104,6 +104,8 @@ def clean_title(t):
         if p.strip().lower() in KNOWN_LANGS:
             langs.append(p.strip().title())
     t = re.sub(r"\s*\([^)]*\)", "", t).strip(" -–")
+    if t.isupper() and len(t) > 4:                 # "THREE WISHES FOR CINDRELLA" -> "Three Wishes For Cindrella"
+        t = t.title().replace("’S", "’s").replace("'S", "'s")
     return t, langs
 
 
@@ -409,64 +411,65 @@ def epix_cinema_label(name):
     return ("Epix " + (name or "")).strip()
 
 
+def epix_exp(s):
+    """Epix hall type: Standard, XL (large screen), VIP (recliners), KINDER (kids); plus 3D if so."""
+    exp = (s.get("screen_type_name") or s.get("movie_experience") or "Standard").strip() or "Standard"
+    if re.search(r"3d", s.get("mf_name") or "", re.I) and "3d" not in exp.lower():
+        exp += " 3D"
+    return exp
+
+
 def scrape_epix(browser, col):
+    """Epix's own booking API: movie-shows/<film>?fromDate=<day> lists every show of that film."""
     samples = {}
-    ctx = browser.new_context(user_agent=DESKTOP_UA, locale="en-US", viewport={"width": 1366, "height": 900})
+    ctx = browser.new_context(user_agent=DESKTOP_UA, locale="en-US")
     try:
-        cin = ctx.request.get(f"{EPIX_API}/cinemas", timeout=30000).json()
-        cine_names = {str(c.get("cinema_id")): c.get("cinema_name") for c in cin.get("Records", [])}
         ns = ctx.request.get(f"{EPIX_API}/now-showing-movies", timeout=30000).json()
         movies = (ns.get("Records") or {}).get("data") or []
         samples["movies"] = [{k: m.get(k) for k in ("movie_id", "content_lang_id", "movie_title", "lang_name",
-                                                     "available_dates", "available_cinemas", "format_name")}
-                             for m in movies]
-        seen = set()
+                                                     "available_dates")} for m in movies]
+        seen_movies, seen_shows = set(), set()
         for m in movies:
             mid, lid = m.get("movie_id"), m.get("content_lang_id") or 1
-            if (mid, lid) in seen:
+            if mid in seen_movies:
                 continue
-            seen.add((mid, lid))
-            title = m.get("movie_title") or m.get("alternate_movie_name_language") or ""
+            seen_movies.add(mid)
             alt = (m.get("altMovieContent") or [{}])[0]
             poster = alt.get("artwork")
             genres = [g for g in (m.get("genre_name") or "").split(",") if g]
             book = f"{EPIX_WEB}/now-showing-booking/{mid}/{lid}/"
-            page = ctx.new_page()
-            calls = []
-            record_calls(page, calls, re.compile(r"api\.epixcinemas\.com"))
-            try:
-                page.goto(book, wait_until="domcontentloaded", timeout=45000)
+            for i in range(DAYS_AHEAD):
+                day = (TODAY + datetime.timedelta(days=i)).isoformat()
                 try:
-                    page.wait_for_load_state("networkidle", timeout=15000)
-                except Exception:
-                    pass
-                page.wait_for_timeout(1500)
-                found = 0
-                for r in calls:
-                    try:
-                        data = r.json()
-                    except Exception:
+                    data = ctx.request.get(f"{EPIX_API}/movie-shows/{mid}?fromDate={day}", timeout=30000).json()
+                except Exception as e:
+                    samples.setdefault("errors", []).append(f"{mid} {day}: {e}"[:200])
+                    continue
+                rows = (data.get("Records") or {}).get("data") or []
+                if "sample" not in samples and rows:
+                    samples["sample"] = rows[:3]
+                new = 0
+                for s in rows:
+                    if not isinstance(s, dict) or not s.get("ss_start_date") or not s.get("ss_start_show_time"):
                         continue
-                    for d in walk(data):
-                        got = epix_show_from(d, cine_names)
-                        if not got:
-                            continue
-                        cinema, (ds, hh, mm), exp = got
-                        try:
-                            day = datetime.date.fromisoformat(ds)
-                        except ValueError:
-                            continue
-                        col.add("Epix", epix_cinema_label(cinema), title, day, fmt_time(hh, mm), exp or "Standard",
-                                book=book, poster=poster, langs=[m.get("lang_name") or ""], genres=genres)
-                        found += 1
-                if "booking_calls" not in samples or (found and not samples.get("booking_found")):
-                    samples["booking_calls"] = dump_calls(calls, 40, 40000)
-                    samples["booking_found"] = found
-                    samples["booking_text"] = page.inner_text("body")[:20000]
-            except Exception as e:
-                samples.setdefault("page_errors", []).append(f"{book}: {e}"[:300])
-            page.close()
-        report(col, "Epix", True, "" if col.count("Epix") else "Booking pages gave no readable times")
+                    sid = s.get("ss_id") or (s.get("cine_name"), s["ss_start_date"], s["ss_start_show_time"], s.get("screen_id"))
+                    if sid in seen_shows or s.get("ss_is_active", "Y") != "Y":
+                        continue
+                    seen_shows.add(sid)
+                    new += 1
+                    try:
+                        d = datetime.date.fromisoformat(s["ss_start_date"][:10])
+                    except ValueError:
+                        continue
+                    hh, mm = s["ss_start_show_time"].split(":")[:2]
+                    title = s.get("movie_title") or m.get("movie_title") or ""
+                    col.add("Epix", epix_cinema_label(s.get("cine_name")), title, d, fmt_time(hh, mm),
+                            epix_exp(s), book=book, poster=poster,
+                            langs=[s.get("lang_name") or m.get("lang_name") or ""], genres=genres)
+                if rows and not new and i > 0:
+                    break           # this endpoint already returned every later day
+                time.sleep(0.15)
+        report(col, "Epix", True, "" if col.count("Epix") else "Epix returned no shows")
     except Exception as e:
         samples["error"] = traceback.format_exc()
         report(col, "Epix", False, f"Error: {str(e)[:120]}")
@@ -474,7 +477,78 @@ def scrape_epix(browser, col):
     save_debug("epix.json", samples)
 
 
-# ----------------------------------------------------------------- VOX, Reel, Cinépolis: deep recording
+# ----------------------------------------------------------------- Reel (Marassi Galleria)
+
+REEL = "https://www.reelcinemas.com/en-bh/showtime/"
+REEL_TIME = re.compile(r"^(\d{1,2}):(\d{2})\s*([ap]m)$", re.I)
+REEL_MINS = re.compile(r"^\d+\s*mins?$", re.I)
+
+
+def parse_reel_text(text, day, col):
+    """Reel's page reads: title / '160 mins' / ... / 'Marassi Bahrain' / hall / times / hall + perks."""
+    lines = [l.replace("⁦", "").replace("⁩", "").strip() for l in text.splitlines()]
+    lines = [l for l in lines if l]
+    title, hall, cinema, n = None, "Standard", "Reel Marassi Galleria", 0
+    for i in range(len(lines)):
+        l = lines[i]
+        if i + 1 < len(lines) and REEL_MINS.match(lines[i + 1]):
+            title, hall = l, "Standard"
+            continue
+        if l.lower().startswith("view more") or l.startswith("Book Cinema Tickets"):
+            break
+        m = REEL_TIME.match(l)
+        if m and title:
+            col.add("Reel", cinema, title, day, fmt_time(*m.groups()), hall,
+                    book=f"{REEL}?date={day.isoformat()}")
+            n += 1
+            continue
+        if l.lower().startswith("after midnight"):
+            continue
+        # A hall name is the line just before its times (skipping the "After midnight," marker).
+        j = i + 1
+        while j < len(lines) and lines[j].lower().startswith("after midnight"):
+            j += 1
+        if title and j < len(lines) and REEL_TIME.match(lines[j]) and len(l) < 40:
+            hall = re.sub(r"^Reel\s+", "", l) or l
+    return n
+
+
+def scrape_reel(browser, col):
+    samples = {}
+    ctx = browser.new_context(user_agent=DESKTOP_UA, locale="en-US", viewport={"width": 1366, "height": 900})
+    page = ctx.new_page()
+    try:
+        for i in range(DAYS_AHEAD):
+            day = TODAY + datetime.timedelta(days=i)
+            page.goto(f"{REEL}?date={day.isoformat()}", wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:
+                pass
+            page.wait_for_timeout(1500)
+            for _ in range(15):                                   # reveal every film
+                btn = page.get_by_role("button", name=re.compile(r"view more", re.I))
+                if not btn.count():
+                    break
+                try:
+                    btn.first.click(timeout=5000)
+                    page.wait_for_timeout(1500)
+                except Exception:
+                    break
+            text = page.inner_text("body")
+            n = parse_reel_text(text, day, col)
+            samples[day.isoformat()] = n
+            if i == 0:
+                samples["text_today"] = text[:30000]
+        report(col, "Reel", True, "" if col.count("Reel") else "Showtimes page had no readable times")
+    except Exception as e:
+        samples["error"] = traceback.format_exc()
+        report(col, "Reel", False, f"Error: {str(e)[:120]}")
+    ctx.close()
+    save_debug("reel_scrape.json", samples)
+
+
+# ----------------------------------------------------------------- VOX, Cinépolis, q-tickets: deep recording
 
 def deep_record(browser, name, steps, http1=False):
     """Visits pages, clicks a few things, and saves every data call and the visible text."""
@@ -515,30 +589,30 @@ def deep_record(browser, name, steps, http1=False):
     print(f"  recorded {name}: {[p.get('status') or p.get('error', '')[:60] for p in out['pages']]}")
 
 
-def record_unmapped(pw):
-    b2 = pw.chromium.launch(args=["--disable-http2"])          # VOX rejects the default connection
+def record_unmapped(pw, qtickets_url=None):
+    b = pw.chromium.launch()
+    # Cinépolis runs a separate Bahrain site that reads from api.cinepolisgulf.com (country 4).
     try:
-        deep_record(b2, "vox", [("goto", "https://bhr.voxcinemas.com/"),
-                                ("goto", "https://bhr.voxcinemas.com/showtimes"),
-                                ("goto", "https://bhr.voxcinemas.com/movies/whats-on")])
+        deep_record(b, "cinepolis", [("goto", "https://bahrain.cinepolisgulf.com/"),
+                                     ("goto", "https://bahrain.cinepolisgulf.com/now-showing"),
+                                     ("click_css", "a[href*='movie'], a[href*='film']"),
+                                     ("click_text", r"^\s*(\d{1,2}:\d{2}|book)")])
+    except Exception as e:
+        print("cinepolis record failed", e)
+    # Cineco books through q-tickets, which may list more days than Cineco's own site.
+    if qtickets_url:
+        try:
+            deep_record(b, "qtickets", [("goto", qtickets_url)])
+        except Exception as e:
+            print("qtickets record failed", e)
+    b.close()
+    # VOX timed out from GitHub last time; try once more with a phone browser and a light load.
+    b2 = pw.chromium.launch(args=["--disable-http2"])
+    try:
+        deep_record(b2, "vox", [("goto", "https://bhr.voxcinemas.com/movies/whats-on")])
     except Exception as e:
         print("vox record failed", e)
     b2.close()
-    b = pw.chromium.launch()
-    try:
-        deep_record(b, "reel", [("goto", "https://www.reelcinemas.com/en-bh/showtime/"),
-                                ("click_css", "main button:nth-of-type(2)"),
-                                ("goto", "https://www.reelcinemas.com/en-bh/movie-details/HO00005648/the-hunger-games-sunrise-on-the-reaping/")])
-    except Exception as e:
-        print("reel record failed", e)
-    try:
-        deep_record(b, "cinepolis", [("goto", "https://www.cinepolisgulf.com/"),
-                                     ("click_text", r"^\s*Bahrain|البحرين"),
-                                     ("goto", "https://www.cinepolisgulf.com/bh"),
-                                     ("goto", "https://www.cinepolisgulf.com/en/bh")])
-    except Exception as e:
-        print("cinepolis record failed", e)
-    b.close()
 
 
 # ----------------------------------------------------------------- elCinema stand-in (only for chains not yet direct)
@@ -608,26 +682,32 @@ def el_parse(html):
 
 
 def scrape_elcinema(browser, col, chains):
+    log = {"chains": sorted(chains), "lists": [], "theaters": {}, "errors": []}
     ctx = browser.new_context(user_agent=MOBILE_UA, locale="en-US", viewport={"width": 430, "height": 932})
     page = ctx.new_page()
     try:
         theaters = {}
         for u in EL_LISTS:
             try:
-                page.goto(u, wait_until="domcontentloaded", timeout=45000)
-            except Exception:
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=45000)
+                log["lists"].append([u, resp.status if resp else None])
+            except Exception as e:
+                log["errors"].append(f"{u}: {e}"[:300])
                 continue
             for a in BeautifulSoup(page.content(), "html.parser").find_all("a", href=True):
                 href = a["href"].replace(EL, "").split("?")[0]
                 name = a.get_text(" ", strip=True)
                 if EL_THEATER.match(href) and name and name.lower() != "favourite" and chain_of(name) in chains:
                     theaters[EL + href] = name
+        log["found"] = theaters
         for url, name in theaters.items():
             try:
                 page.goto(url, wait_until="domcontentloaded", timeout=45000)
                 page.wait_for_timeout(1500)
-            except Exception:
+            except Exception as e:
+                log["errors"].append(f"{url}: {e}"[:300])
                 continue
+            before = len(col.shows)
             h1 = page.query_selector("h1")
             cname = (h1.inner_text().strip() if h1 else name).replace(" Cinema", "")
             chain = chain_of(cname) or chain_of(name)
@@ -650,9 +730,11 @@ def scrape_elcinema(browser, col, chains):
                         langs.append("Hindi")
                     col.add(chain, cname, title, d, t, exp, poster=md.get("poster"), langs=langs,
                             genres=md.get("genres", []), src="elcinema")
-    except Exception as e:
-        print("elCinema stand-in failed:", e)
+            log["theaters"][cname] = {"chain": chain, "pages": len(pages), "shows": len(col.shows) - before}
+    except Exception:
+        log["errors"].append(traceback.format_exc()[-1500:])
     ctx.close()
+    save_debug("elcinema.json", log)
 
 
 # ----------------------------------------------------------------- main
@@ -666,22 +748,23 @@ def main():
         scrape_cineco(api, col)
         api.close()
         scrape_epix(browser, col)
+        scrape_reel(browser, col)
 
-        # Chains with no working direct scraper yet get elCinema, flagged as a fallback.
+        # Chains with no working direct scraper get elCinema, flagged as a fallback.
         need = [c for c in ("VOX", "Reel", "Cinépolis", "Cineco", "Epix", "Mukta A2")
                 if not col.count(c, "direct")]
         if need:
             print("elCinema stand-in for:", need)
             scrape_elcinema(browser, col, set(need))
         for c in need:
-            notes = {"VOX": "Direct VOX scraper not built yet",
-                     "Reel": "Direct Reel scraper not built yet",
-                     "Cinépolis": "Not built yet, and elCinema has no Cinépolis times"}
+            notes = {"VOX": "VOX's website blocks GitHub's servers",
+                     "Cinépolis": "Direct Cinépolis scraper not built yet"}
             prev = col.health.get(c, {}).get("note", "")
             report(col, c, False, notes.get(c, prev or "Direct scraper failed"))
         browser.close()
+        qt = next((s["book"] for s in col.shows if s["chain"] == "Cineco" and "q-tickets" in (s["book"] or "")), None)
         try:
-            record_unmapped(pw)
+            record_unmapped(pw, qt)
         except Exception as e:
             print("recording failed (ignored):", e)
 
