@@ -38,6 +38,16 @@ MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)}
 
 os.makedirs("debug/sites2", exist_ok=True)
+RUN_START = time.time()
+
+
+class Budget:
+    """A time limit for one cinema, so one slow or stuck site can't hold up the whole run."""
+    def __init__(self, seconds):
+        self.end = time.time() + seconds
+
+    def over(self):
+        return time.time() > self.end
 
 
 # ----------------------------------------------------------------- helpers
@@ -161,11 +171,13 @@ class Collector:
         return [s for s in self.shows if s["chain"] == chain and (src is None or s["src"] == src)]
 
 
-def report(col, chain, ok, note=""):
+def report(col, chain, ok, note="", partial=False):
     shows = col.count(chain)
     days = sorted({s["date"] for s in shows})
     srcs = {s["src"] for s in shows}
     status = "ok" if ok and shows else ("fallback" if shows and "elcinema" in srcs else "fail")
+    if status == "ok" and partial:
+        status = "partial"
     note = (note or "").strip().splitlines()[0][:160] if note else ""
     col.health[chain] = {"status": status, "shows": len(shows), "days": len(days),
                          "last_day": days[-1] if days else None,
@@ -223,7 +235,7 @@ def options(html_str):
 
 
 def mukta_post(ctx, path, payload):
-    r = ctx.request.post(f"{MUKTA}/Home/{path}", data=json.dumps(payload), timeout=30000, headers={
+    r = ctx.request.post(f"{MUKTA}/Home/{path}", data=json.dumps(payload), timeout=15000, headers={
         "Content-Type": "application/json; charset=utf-8", "X-Requested-With": "XMLHttpRequest",
         "Referer": MUKTA, "Origin": "https://www.muktaa2cinemas.com"})
     txt = r.text()
@@ -243,10 +255,14 @@ def scrape_mukta(ctx, col):
         parts = first.split("~")
         theatres = options(parts[1]) if len(parts) > 1 else [("122", "JUFFAIR MALL, JUFFAIR")]
         samples["theatres"] = theatres
+        budget, cut = Budget(6 * 60), False
         for tid, tname in theatres:
             cinema = "Mukta A2 " + tname.split(",")[0].title()
             films = options(mukta_post(ctx, "getcityfilmthetrestatus1", {"TheatreId": tid, "Cityid": city}))
             for fid, ftitle in films:
+                if budget.over():
+                    cut = True
+                    break
                 dates_html = mukta_post(ctx, "Showdatetime", {"TheaterId": tid, "FilmId": fid})
                 if len(samples) < 4:
                     samples[f"dates_{fid}"] = dates_html[:3000]
@@ -267,7 +283,7 @@ def scrape_mukta(ctx, col):
                         exp = rest if rest and not TIME_RE.search(rest) else "Standard"
                         col.add("Mukta A2", cinema, ftitle, d, t, exp, book=MUKTA)
                     time.sleep(0.2)
-        report(col, "Mukta A2", True)
+        report(col, "Mukta A2", True, "Stopped at the time limit" if cut else "", partial=cut)
     except Exception as e:
         samples["error"] = traceback.format_exc()
         report(col, "Mukta A2", False, f"Error: {str(e)[:120]}")
@@ -293,14 +309,23 @@ def scrape_cineco(ctx, col):
                 if "/amy_movie/" in h:
                     links.add(h if h.startswith("http") else CINECO + h)
         samples["films"] = sorted(links)
+        budget, cut = Budget(5 * 60), False
         for url in sorted(links):
-            html = ctx.request.get(url, timeout=40000).text()
+            if budget.over():
+                cut = True
+                break
+            try:
+                html = ctx.request.get(url, timeout=20000).text()
+            except Exception as e:
+                samples.setdefault("errors", []).append(f"{url}: {e}"[:200])
+                continue
             if "sample_page" not in samples:
                 samples["sample_page"] = url
                 save_debug("cineco_film.html", html)
             parse_cineco_film(html, url, col)
             time.sleep(0.3)
-        report(col, "Cineco", True, "" if col.count("Cineco") else "Film pages had no times")
+        report(col, "Cineco", True, "Stopped at the time limit" if cut else ("" if col.count("Cineco") else "Film pages had no times"),
+               partial=cut)
     except Exception as e:
         samples["error"] = traceback.format_exc()
         report(col, "Cineco", False, f"Error: {str(e)[:120]}")
@@ -429,6 +454,7 @@ def scrape_epix(browser, col):
         samples["movies"] = [{k: m.get(k) for k in ("movie_id", "content_lang_id", "movie_title", "lang_name",
                                                      "available_dates")} for m in movies]
         seen_movies, seen_shows = set(), set()
+        budget, fails_in_row = Budget(8 * 60), 0
         for m in movies:
             mid, lid = m.get("movie_id"), m.get("content_lang_id") or 1
             if mid in seen_movies:
@@ -443,10 +469,14 @@ def scrape_epix(browser, col):
             days = [d for d in avail if TODAY.isoformat() <= d <= LAST.isoformat()] if avail else \
                 [(TODAY + datetime.timedelta(days=i)).isoformat() for i in range(DAYS_AHEAD)]
             for day in days:
+                if budget.over() or fails_in_row >= 8:
+                    samples.setdefault("gave_up", []).append(f"{mid} {day} (stopped: "
+                                                             f"{'time limit' if budget.over() else 'Epix not answering'})")
+                    continue
                 data = None
-                for attempt in range(4):                 # Epix throttles fast callers: back off and retry
+                for attempt in range(3):                 # Epix throttles fast callers: back off and retry
                     try:
-                        r = ctx.request.get(f"{EPIX_API}/movie-shows/{mid}?fromDate={day}", timeout=30000)
+                        r = ctx.request.get(f"{EPIX_API}/movie-shows/{mid}?fromDate={day}", timeout=12000)
                         body = r.text()
                         j = json.loads(body) if body.strip().startswith("{") else None
                         if r.status == 200 and j and isinstance(j.get("Records"), dict):
@@ -455,11 +485,15 @@ def scrape_epix(browser, col):
                         samples.setdefault("bad", []).append(f"{mid} {day} try{attempt}: HTTP {r.status} {body[:160]}")
                     except Exception as e:
                         samples.setdefault("bad", []).append(f"{mid} {day} try{attempt}: {e}"[:220])
-                    time.sleep(3 * (attempt + 1))
-                time.sleep(0.6)
+                    if budget.over():
+                        break
+                    time.sleep(2 * (attempt + 1))
+                time.sleep(0.5)
                 if data is None:
+                    fails_in_row += 1
                     samples.setdefault("gave_up", []).append(f"{mid} {day}")
                     continue
+                fails_in_row = 0
                 rows = (data.get("Records") or {}).get("data") or []
                 if "sample" not in samples and rows:
                     samples["sample"] = rows[:3]
@@ -482,8 +516,8 @@ def scrape_epix(browser, col):
                             epix_exp(s), book=book, poster=poster,
                             langs=[s.get("lang_name") or m.get("lang_name") or ""], genres=genres)
         missed = len(samples.get("gave_up", []))
-        report(col, "Epix", missed == 0 or bool(col.count("Epix")),
-               f"{missed} film-days could not be loaded" if missed else "")
+        report(col, "Epix", True, f"{missed} film-days could not be loaded" if missed else "",
+               partial=missed > 0)
     except Exception as e:
         samples["error"] = traceback.format_exc()
         report(col, "Epix", False, f"Error: {str(e)[:120]}")
@@ -531,16 +565,27 @@ def scrape_reel(browser, col):
     samples = {}
     ctx = browser.new_context(user_agent=DESKTOP_UA, locale="en-US", viewport={"width": 1366, "height": 900})
     page = ctx.new_page()
+    budget, cut = Budget(7 * 60), False
     try:
         for i in range(DAYS_AHEAD):
+            if budget.over():
+                cut = True
+                break
             day = TODAY + datetime.timedelta(days=i)
-            page.goto(f"{REEL}?date={day.isoformat()}", wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.goto(f"{REEL}?date={day.isoformat()}", wait_until="domcontentloaded", timeout=30000)
+            except Exception as e:
+                samples[day.isoformat()] = f"error: {e}"[:200]
+                cut = True
+                continue
             try:
                 page.wait_for_load_state("networkidle", timeout=15000)
             except Exception:
                 pass
             page.wait_for_timeout(1500)
             for _ in range(15):                                   # reveal every film
+                if budget.over():
+                    break
                 btn = page.get_by_role("button", name=re.compile(r"view more", re.I))
                 if not btn.count():
                     break
@@ -554,7 +599,8 @@ def scrape_reel(browser, col):
             samples[day.isoformat()] = n
             if i == 0:
                 samples["text_today"] = text[:30000]
-        report(col, "Reel", True, "" if col.count("Reel") else "Showtimes page had no readable times")
+        report(col, "Reel", True, "Some days could not be loaded" if cut else
+               ("" if col.count("Reel") else "Showtimes page had no readable times"), partial=cut)
     except Exception as e:
         samples["error"] = traceback.format_exc()
         report(col, "Reel", False, f"Error: {str(e)[:120]}")
@@ -621,7 +667,7 @@ def reachability(ctx):
         try:
             hdrs = {"Origin": "https://bahrain.cinepolisgulf.com",
                     "Referer": "https://bahrain.cinepolisgulf.com/"} if "cinepolis" in url else {}
-            r = ctx.request.get(url, timeout=25000, headers=hdrs)
+            r = ctx.request.get(url, timeout=15000, headers=hdrs)
             body = r.text()
             out[name] = {"status": r.status, "secs": round(time.time() - t0, 1), "bytes": len(body),
                          "body": body[:3000]}
@@ -763,7 +809,11 @@ def scrape_elcinema(browser, col, chains):
                     url = EL + href.rstrip("/") + "/"
                     theaters.setdefault(url, name)
         log["found"] = theaters
+        budget = Budget(6 * 60)
         for url, name in theaters.items():
+            if budget.over():
+                log["errors"].append("stopped at the time limit")
+                break
             try:
                 page.goto(url, wait_until="domcontentloaded", timeout=45000)
                 page.wait_for_timeout(1500)

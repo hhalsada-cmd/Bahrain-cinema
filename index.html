@@ -54,6 +54,7 @@
   .hicon { width:20px; height:20px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex:0 0 20px; }
   .hrow.ok .hicon { background:#123d22; color:#5be08a; }
   .hrow.fallback .hicon { background:#3a2a0c; color:#ffd27a; }
+  .hrow.partial .hicon { background:#3a2a0c; color:#ffd27a; }
   .hrow.fail .hicon { background:#3a1215; color:#ff8a90; }
   .hname { color:var(--text); font-size:13.5px; font-weight:600; flex:1; }
   .hlabel { font-size:12px; }
@@ -163,8 +164,9 @@ function renderHealth(d){
   const list=$("div","health");
   hs.forEach(x=>{
     const row=$("div","hrow "+x.st);
-    const icon=x.st==="ok"?"✓":x.st==="fallback"?"!":"✕";
+    const icon=x.st==="ok"?"✓":(x.st==="fallback"||x.st==="partial")?"!":"✕";
     const label=x.st==="ok"?`${x.shows} shows · ${x.days} day${x.days===1?"":"s"}`:
+                x.st==="partial"?`${x.shows} shows · partly loaded`:
                 x.st==="fallback"?`Using elCinema stand-in · ${x.days} day${x.days===1?"":"s"}`:"Not working";
     row.append($("span","hicon",icon),$("span","hname",x.chain),$("span","hlabel",label));
     list.appendChild(row);
