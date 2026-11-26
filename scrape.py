@@ -438,12 +438,27 @@ def scrape_epix(browser, col):
             poster = alt.get("artwork")
             genres = [g for g in (m.get("genre_name") or "").split(",") if g]
             book = f"{EPIX_WEB}/now-showing-booking/{mid}/{lid}/"
-            for i in range(DAYS_AHEAD):
-                day = (TODAY + datetime.timedelta(days=i)).isoformat()
-                try:
-                    data = ctx.request.get(f"{EPIX_API}/movie-shows/{mid}?fromDate={day}", timeout=30000).json()
-                except Exception as e:
-                    samples.setdefault("errors", []).append(f"{mid} {day}: {e}"[:200])
+            # Only ask for the days Epix says this film plays, within our 7-day window.
+            avail = [x.strip() for x in (m.get("available_dates") or "").split(",") if x.strip()]
+            days = [d for d in avail if TODAY.isoformat() <= d <= LAST.isoformat()] if avail else \
+                [(TODAY + datetime.timedelta(days=i)).isoformat() for i in range(DAYS_AHEAD)]
+            for day in days:
+                data = None
+                for attempt in range(4):                 # Epix throttles fast callers: back off and retry
+                    try:
+                        r = ctx.request.get(f"{EPIX_API}/movie-shows/{mid}?fromDate={day}", timeout=30000)
+                        body = r.text()
+                        j = json.loads(body) if body.strip().startswith("{") else None
+                        if r.status == 200 and j and isinstance(j.get("Records"), dict):
+                            data = j
+                            break
+                        samples.setdefault("bad", []).append(f"{mid} {day} try{attempt}: HTTP {r.status} {body[:160]}")
+                    except Exception as e:
+                        samples.setdefault("bad", []).append(f"{mid} {day} try{attempt}: {e}"[:220])
+                    time.sleep(3 * (attempt + 1))
+                time.sleep(0.6)
+                if data is None:
+                    samples.setdefault("gave_up", []).append(f"{mid} {day}")
                     continue
                 rows = (data.get("Records") or {}).get("data") or []
                 if "sample" not in samples and rows:
@@ -466,10 +481,9 @@ def scrape_epix(browser, col):
                     col.add("Epix", epix_cinema_label(s.get("cine_name")), title, d, fmt_time(hh, mm),
                             epix_exp(s), book=book, poster=poster,
                             langs=[s.get("lang_name") or m.get("lang_name") or ""], genres=genres)
-                if rows and not new and i > 0:
-                    break           # this endpoint already returned every later day
-                time.sleep(0.15)
-        report(col, "Epix", True, "" if col.count("Epix") else "Epix returned no shows")
+        missed = len(samples.get("gave_up", []))
+        report(col, "Epix", missed == 0 or bool(col.count("Epix")),
+               f"{missed} film-days could not be loaded" if missed else "")
     except Exception as e:
         samples["error"] = traceback.format_exc()
         report(col, "Epix", False, f"Error: {str(e)[:120]}")
@@ -555,8 +569,9 @@ def deep_record(browser, name, steps, http1=False):
     out = {"pages": []}
     ctx = browser.new_context(user_agent=DESKTOP_UA, locale="en-US", viewport={"width": 1366, "height": 900})
     page = ctx.new_page()
-    calls = []
+    calls, failed = [], []
     page.on("response", lambda r: calls.append(r))
+    page.on("requestfailed", lambda r: failed.append([r.url[:200], str(r.failure)[:120]]))
     for kind, arg in steps:
         entry = {"step": kind, "arg": arg}
         try:
@@ -584,9 +599,41 @@ def deep_record(browser, name, steps, http1=False):
     noise = re.compile(r"google|doubleclick|facebook|analytics|hotjar|clarity|tiktok|snap|criteo|"
                        r"grafana|yandex|sentry|onesignal|netcore|stripe|cdn-cgi|\.run\.app|on\.aws", re.I)
     out["calls"] = dump_calls([r for r in calls if not noise.search(r.url)], 80, 50000)
+    out["failed"] = [f for f in failed if not noise.search(f[0])][:80]
     save_debug(f"{name}.json", out)
     ctx.close()
     print(f"  recorded {name}: {[p.get('status') or p.get('error', '')[:60] for p in out['pages']]}")
+
+
+def reachability(ctx):
+    """Plain requests to the sites that seem to block us, with timings, so we know exactly why."""
+    tests = [
+        ("vox_home", "https://bhr.voxcinemas.com/"),
+        ("vox_whats_on", "https://bhr.voxcinemas.com/movies/whats-on"),
+        ("cinepolis_country", "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4"),
+        ("cinepolis_banners", "https://api.cinepolisgulf.com/api/movies/banners/?country_id=4"),
+        ("cinepolis_site", "https://bahrain.cinepolisgulf.com/"),
+        ("control_github", "https://github.com/"),
+    ]
+    out = {}
+    for name, url in tests:
+        t0 = time.time()
+        try:
+            hdrs = {"Origin": "https://bahrain.cinepolisgulf.com",
+                    "Referer": "https://bahrain.cinepolisgulf.com/"} if "cinepolis" in url else {}
+            r = ctx.request.get(url, timeout=25000, headers=hdrs)
+            body = r.text()
+            out[name] = {"status": r.status, "secs": round(time.time() - t0, 1), "bytes": len(body),
+                         "body": body[:3000]}
+        except Exception as e:
+            out[name] = {"error": str(e).splitlines()[0][:200], "secs": round(time.time() - t0, 1)}
+        print(f"  reach {name}: {out[name].get('status', out[name].get('error'))} in {out[name]['secs']}s")
+    try:
+        ip = ctx.request.get("https://www.cloudflare.com/cdn-cgi/trace", timeout=15000).text()
+        out["runner_location"] = [l for l in ip.splitlines() if l.startswith(("loc=", "colo="))]
+    except Exception:
+        pass
+    save_debug("reachability.json", out)
 
 
 def record_unmapped(pw, qtickets_url=None):
@@ -681,12 +728,27 @@ def el_parse(html):
     return out, meta
 
 
+EL_SEEDS = {   # known elCinema pages, so the stand-in works even if its cinema list changes
+    "VOX": {"https://elcinema.com/en/theater/3101299/": "Vox Bahrain City Centre",
+            "https://elcinema.com/en/theater/3101298/": "Vox The Avenues"},
+    "Reel": {"https://elcinema.com/en/theater/3101574/": "Reel Marassi Galleria"},
+    "Epix": {"https://elcinema.com/en/theater/3101599/": "Epix Dana Mall",
+             "https://elcinema.com/en/theater/3101621/": "Epix Al Liwan"},
+    "Mukta A2": {"https://elcinema.com/en/theater/3101515/": "Mukta A2"},
+    "Cineco": {"https://elcinema.com/en/theater/3101521/": "Cineco Seef",
+               "https://elcinema.com/en/theater/3101522/": "Cineco Juffair",
+               "https://elcinema.com/en/theater/3101524/": "Cineco Al Hamra"},
+}
+
+
 def scrape_elcinema(browser, col, chains):
     log = {"chains": sorted(chains), "lists": [], "theaters": {}, "errors": []}
     ctx = browser.new_context(user_agent=MOBILE_UA, locale="en-US", viewport={"width": 430, "height": 932})
     page = ctx.new_page()
     try:
         theaters = {}
+        for c in chains:
+            theaters.update(EL_SEEDS.get(c, {}))
         for u in EL_LISTS:
             try:
                 resp = page.goto(u, wait_until="domcontentloaded", timeout=45000)
@@ -698,7 +760,8 @@ def scrape_elcinema(browser, col, chains):
                 href = a["href"].replace(EL, "").split("?")[0]
                 name = a.get_text(" ", strip=True)
                 if EL_THEATER.match(href) and name and name.lower() != "favourite" and chain_of(name) in chains:
-                    theaters[EL + href] = name
+                    url = EL + href.rstrip("/") + "/"
+                    theaters.setdefault(url, name)
         log["found"] = theaters
         for url, name in theaters.items():
             try:
@@ -746,6 +809,10 @@ def main():
         api = browser.new_context(user_agent=DESKTOP_UA, locale="en-US")
         scrape_mukta(api, col)
         scrape_cineco(api, col)
+        try:
+            reachability(api)
+        except Exception as e:
+            print("reachability test failed (ignored):", e)
         api.close()
         scrape_epix(browser, col)
         scrape_reel(browser, col)
@@ -758,7 +825,7 @@ def main():
             scrape_elcinema(browser, col, set(need))
         for c in need:
             notes = {"VOX": "VOX's website blocks GitHub's servers",
-                     "Cinépolis": "Direct Cinépolis scraper not built yet"}
+                     "Cinépolis": "Cinépolis's Bahrain site shows no films to GitHub's servers"}
             prev = col.health.get(c, {}).get("note", "")
             report(col, c, False, notes.get(c, prev or "Direct scraper failed"))
         browser.close()
