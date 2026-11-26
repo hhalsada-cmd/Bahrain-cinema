@@ -6,5 +6,6 @@
    "error": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://bhr.voxcinemas.com/movies/whats-on\", waiting until \"domcontentloaded\"\n"
   }
  ],
- "calls": []
+ "calls": [],
+ "failed": []
 }

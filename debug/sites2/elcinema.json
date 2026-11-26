@@ -18,20 +18,20 @@
   ]
  ],
  "theaters": {
-  "Vox The Avenues": {
-   "chain": "VOX",
-   "pages": 7,
-   "shows": 310
-  },
   "Vox Bahrain City Centre": {
    "chain": "VOX",
    "pages": 7,
    "shows": 654
+  },
+  "Vox The Avenues": {
+   "chain": "VOX",
+   "pages": 7,
+   "shows": 310
   }
  },
  "errors": [],
  "found": {
-  "https://elcinema.com/en/theater/3101298/": "Vox The Avenues Cinema",
-  "https://elcinema.com/en/theater/3101299/": "Vox Bahrain City Centre Cinema"
+  "https://elcinema.com/en/theater/3101299/": "Vox Bahrain City Centre",
+  "https://elcinema.com/en/theater/3101298/": "Vox The Avenues"
  }
 }
