@@ -5,11 +5,11 @@
    "JUFFAIR MALL, JUFFAIR"
   ]
  ],
- "dates_21585": "<option value=\"0\">Date</option><option style=font-size:11px; value='11/25/2026'>Wed 25<sup>th</sup> Nov</option><option style=font-size:11px; value='11/26/2026'>Thu 26<sup>th</sup> Nov</option><option style=font-size:11px; value='11/27/2026'>Fri 27<sup>th</sup> Nov</option><option style=font-size:11px; value='11/28/2026'>Sat 28<sup>th</sup> Nov</option>",
- "times_21585_11/25/2026": "<option value=\"0\">Time</option><option  value='11:45:00 PM_116972'>11:45 PM</option>",
+ "dates_21585": "<option value=\"0\">Date</option><option style=font-size:11px; value='11/26/2026'>Thu 26<sup>th</sup> Nov</option><option style=font-size:11px; value='11/27/2026'>Fri 27<sup>th</sup> Nov</option><option style=font-size:11px; value='11/28/2026'>Sat 28<sup>th</sup> Nov</option>",
  "times_21585_11/26/2026": "<option value=\"0\">Time</option><option  value='01:30:00 PM_117059'>01:30 PM</option><option  value='05:00:00 PM_117140'>05:00 PM</option><option  value='08:00:00 PM_117060'>08:00 PM</option>",
  "times_21585_11/27/2026": "<option value=\"0\">Time</option><option  value='01:15:00 PM_117082'>01:15 PM</option><option  value='09:00:00 PM_117083'>09:00 PM</option><option  value='11:15:00 PM_117161'>11:15 PM</option>",
  "times_21585_11/28/2026": "<option value=\"0\">Time</option><option  value='01:30:00 PM_117112'>01:30 PM</option><option  value='09:00:00 PM_117163'>09:00 PM</option>",
- "times_21669_11/25/2026": "<option value=\"0\">Time</option><option value=\"0\">Show Not Available</option>",
- "times_21713_11/25/2026": "<option value=\"0\">Time</option><option  value='11:30:00 PM_117008'>11:30 PM</option>"
+ "times_21665_11/26/2026": "<option value=\"0\">Time</option><option  value='03:00:00 PM_117065'>03:00 PM</option><option  value='09:00:00 PM_117066'>09:00 PM</option><option  value='12:15:00 AM_117073'>12:15 AM</option>",
+ "times_21665_11/27/2026": "<option value=\"0\">Time</option><option  value='03:00:00 PM_117089'>03:00 PM</option><option  value='10:15:00 PM_117154'>10:15 PM</option><option  value='12:30:00 AM_117157'>12:30 AM</option>",
+ "times_21665_11/28/2026": "<option value=\"0\">Time</option><option  value='03:00:00 PM_117121'>03:00 PM</option><option  value='10:15:00 PM_117164'>10:15 PM</option><option  value='12:30:00 AM_117165'>12:30 AM</option>"
 }
