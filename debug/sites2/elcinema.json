@@ -20,13 +20,13 @@
  "theaters": {
   "Vox Bahrain City Centre": {
    "chain": "VOX",
-   "pages": 7,
-   "shows": 654
+   "pages": 6,
+   "shows": 558
   },
   "Vox The Avenues": {
    "chain": "VOX",
-   "pages": 7,
-   "shows": 310
+   "pages": 6,
+   "shows": 264
   }
  },
  "errors": [],
