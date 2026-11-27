@@ -99,11 +99,7 @@
  ],
  "failed": [
   [
-   "https://api.cinepolisgulf.com/api/v2/home/nowshowing-v2/?country_id=4",
-   "net::ERR_FAILED"
-  ],
-  [
-   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
+   "https://api.cinepolisgulf.com/api/generic/site-data?country_id=4",
    "net::ERR_FAILED"
   ],
   [
@@ -111,7 +107,11 @@
    "net::ERR_FAILED"
   ],
   [
-   "https://api.cinepolisgulf.com/api/generic/site-data?country_id=4",
+   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
+   "net::ERR_FAILED"
+  ],
+  [
+   "https://api.cinepolisgulf.com/api/v2/home/nowshowing-v2/?country_id=4",
    "net::ERR_FAILED"
   ],
   [
@@ -120,22 +120,6 @@
   ],
   [
    "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
-   "net::ERR_FAILED"
-  ],
-  [
-   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
-   "net::ERR_FAILED"
-  ],
-  [
-   "https://api.cinepolisgulf.com/api/movies/cities/?country_id=4",
-   "net::ERR_FAILED"
-  ],
-  [
-   "https://api.cinepolisgulf.com/api/v2/home/nowshowing-v2/?movie_language_id=&movie_genre_id=&country_id=4",
-   "net::ERR_FAILED"
-  ],
-  [
-   "https://api.cinepolisgulf.com/api/promotions/promotions/?country_id=4",
    "net::ERR_FAILED"
   ],
   [
@@ -147,6 +131,14 @@
    "net::ERR_FAILED"
   ],
   [
+   "https://api.cinepolisgulf.com/api/movies/cities/?country_id=4",
+   "net::ERR_FAILED"
+  ],
+  [
+   "https://api.cinepolisgulf.com/api/generic/movie-languages?country_id=4",
+   "net::ERR_FAILED"
+  ],
+  [
    "https://api.cinepolisgulf.com/api/generic/movie-genres?country_id=4",
    "net::ERR_FAILED"
   ],
@@ -155,7 +147,7 @@
    "net::ERR_FAILED"
   ],
   [
-   "https://api.cinepolisgulf.com/api/generic/movie-languages?country_id=4",
+   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
    "net::ERR_FAILED"
   ],
   [
@@ -163,8 +155,20 @@
    "net::ERR_FAILED"
   ],
   [
+   "https://api.cinepolisgulf.com/api/v2/home/nowshowing-v2/?movie_language_id=&movie_genre_id=&country_id=4",
+   "net::ERR_FAILED"
+  ],
+  [
+   "https://api.cinepolisgulf.com/api/promotions/promotions/?country_id=4",
+   "net::ERR_FAILED"
+  ],
+  [
    "https://pixel.sitescout.com/dmp/asyncPixelSync",
    "net::ERR_ABORTED"
+  ],
+  [
+   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
+   "net::ERR_FAILED"
   ],
   [
    "https://api.cinepolisgulf.com/api/v2/home/nowshowing-v2/?country_id=4",
@@ -175,19 +179,15 @@
    "net::ERR_FAILED"
   ],
   [
-   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
-   "net::ERR_FAILED"
-  ],
-  [
    "https://api.cinepolisgulf.com/api/generic/site-data?country_id=4",
    "net::ERR_FAILED"
   ],
   [
-   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
+   "https://api.cinepolisgulf.com/api/movies/countries?all=all",
    "net::ERR_FAILED"
   ],
   [
-   "https://api.cinepolisgulf.com/api/movies/countries?all=all",
+   "https://api.cinepolisgulf.com/api/generic/country-specific-data?country_id=4",
    "net::ERR_FAILED"
   ],
   [
@@ -203,16 +203,16 @@
    "net::ERR_FAILED"
   ],
   [
+   "https://api.cinepolisgulf.com/api/v2/home/comingsoon-v2/?country_id=4",
+   "net::ERR_FAILED"
+  ],
+  [
    "https://api.cinepolisgulf.com/api/v2/home/nowshowing-v2/?country_id=4",
    "net::ERR_FAILED"
   ],
   [
    "https://pixel.sitescout.com/dmp/asyncPixelSync",
    "net::ERR_ABORTED"
-  ],
-  [
-   "https://api.cinepolisgulf.com/api/v2/home/comingsoon-v2/?country_id=4",
-   "net::ERR_FAILED"
   ]
  ]
 }

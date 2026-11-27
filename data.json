@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T04:19:30.540022+00:00",
- "checked": "2026-11-27T04:19:30.540022+00:00",
+ "updated": "2026-11-27T12:13:32.505756+00:00",
+ "checked": "2026-11-27T12:13:32.505756+00:00",
  "cinemas": [
   "Cineco Al Hamra",
   "Cineco Juffair",
@@ -16,9 +16,9 @@
  "health": {
   "Mukta A2": {
    "status": "ok",
-   "shows": 55,
-   "days": 2,
-   "last_day": "2026-11-28",
+   "shows": 82,
+   "days": 4,
+   "last_day": "2026-11-30",
    "cinemas": [
     "Mukta A2 Juffair Mall"
    ],
@@ -39,18 +39,18 @@
   },
   "Epix": {
    "status": "partial",
-   "shows": 4,
+   "shows": 14,
    "days": 1,
    "last_day": "2026-11-27",
    "cinemas": [
     "Epix Al Liwan",
     "Epix Dana Mall"
    ],
-   "note": "107 film-days could not be loaded"
+   "note": "103 film-days could not be loaded"
   },
   "Reel": {
    "status": "ok",
-   "shows": 144,
+   "shows": 155,
    "days": 6,
    "last_day": "2026-12-02",
    "cinemas": [
@@ -114,16 +114,6 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "12:30 am",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
      "time": "3:00 pm",
      "exp": "Standard",
@@ -144,8 +134,18 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "12:30 am",
+     "date": "2026-11-29",
+     "time": "10:15 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "10:15 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -397,16 +397,6 @@
      "date": "2026-11-27",
      "time": "12:00 am",
      "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "2:40 pm",
-     "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
      "price": null,
      "src": "direct"
@@ -1672,26 +1662,6 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "1:30 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
      "time": "4:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -1712,17 +1682,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "10:30 am",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "1:30 pm",
+     "time": "10:45 am",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -1741,8 +1701,18 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "6:15 pm",
+     "date": "2026-11-29",
+     "time": "4:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "4:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -1932,16 +1902,6 @@
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
      "date": "2026-11-27",
-     "time": "2:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
      "time": "4:30 pm",
      "exp": "Platinum Suites",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
@@ -1954,36 +1914,6 @@
      "date": "2026-11-27",
      "time": "7:00 pm",
      "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "12:15 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "1:20 pm",
-     "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
      "price": null,
      "src": "direct"
@@ -5430,16 +5360,6 @@
      "src": "direct"
     },
     {
-     "chain": "Epix",
-     "cinema": "Epix Al Liwan",
-     "date": "2026-11-27",
-     "time": "1:45 pm",
-     "exp": "Standard",
-     "book": "https://www.epixcinemas.com/now-showing-booking/1435/1/",
-     "price": null,
-     "src": "direct"
-    },
-    {
      "chain": "VOX",
      "cinema": "Vox Bahrain City Centre",
      "date": "2026-11-27",
@@ -5880,26 +5800,6 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
-     "time": "10:00 am",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
      "time": "5:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -5910,16 +5810,6 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
      "time": "9:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -5950,7 +5840,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "2:15 pm",
+     "time": "1:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -5960,7 +5850,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "5:45 pm",
+     "time": "4:30 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -5970,7 +5860,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "9:00 pm",
+     "time": "8:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -5980,7 +5870,67 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "12:30 am",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "8:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "8:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "11:30 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -6103,6 +6053,106 @@
      "time": "9:35 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "9:35 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "9:35 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "9:35 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "9:35 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "9:35 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
      "price": null,
      "src": "direct"
     },
@@ -6349,59 +6399,21 @@
    ]
   },
   {
-   "id": "aakasamlookatara",
-   "title": "Aakasamlo Oka Tara",
-   "poster": "https://bahrain.cineco.net/wp-content/uploads/2026/11/AAKASAMLO-OKA-TARA-malayalam.jpg",
+   "id": "hailmary",
+   "title": "Hail Mary",
+   "poster": "https://bahrain.cineco.net/wp-content/uploads/2026/11/BHRN-GUIDE-1358-19.jpg",
    "lang": [
     "Malayalam"
    ],
-   "genres": [],
+   "genres": [
+    "Thriller"
+   ],
    "indian": true,
    "shows": [
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
-     "time": "4:45 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "8:30 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "11:30 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "4:45 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
      "time": "6:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -6411,7 +6423,117 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "12:30 am",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
+     "time": "10:30 am",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "1:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "7:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "10:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "11:59 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "4:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "7:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
      "time": "8:30 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -6419,142 +6541,10 @@
      "src": "direct"
     },
     {
-     "chain": "Cineco",
-     "cinema": "Cineco Seef",
-     "date": "2026-11-27",
-     "time": "11:30 am",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Seef",
-     "date": "2026-11-27",
-     "time": "12:30 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Seef",
-     "date": "2026-11-27",
-     "time": "5:15 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Seef",
-     "date": "2026-11-27",
-     "time": "7:45 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Seef",
-     "date": "2026-11-27",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Juffair",
-     "date": "2026-11-27",
-     "time": "1:15 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Juffair",
-     "date": "2026-11-27",
-     "time": "2:30 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Juffair",
-     "date": "2026-11-27",
-     "time": "4:30 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Juffair",
-     "date": "2026-11-27",
-     "time": "7:45 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Juffair",
-     "date": "2026-11-27",
-     "time": "8:15 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Juffair",
-     "date": "2026-11-27",
-     "time": "11:00 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Cineco",
-     "cinema": "Cineco Al Hamra",
-     "date": "2026-11-27",
-     "time": "2:45 pm",
-     "exp": "Standard",
-     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
-     "price": null,
-     "src": "direct"
-    }
-   ]
-  },
-  {
-   "id": "hailmary",
-   "title": "Hail Mary",
-   "poster": "https://bahrain.cineco.net/wp-content/uploads/2026/11/BHRN-GUIDE-1358-19.jpg",
-   "lang": [
-    "Malayalam"
-   ],
-   "genres": [],
-   "indian": true,
-   "shows": [
-    {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "10:15 am",
+     "date": "2026-11-29",
+     "time": "10:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -6563,8 +6553,38 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "10:00 am",
+     "date": "2026-11-30",
+     "time": "4:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "7:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "8:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "10:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -6737,6 +6757,1595 @@
      "time": "6:00 pm",
      "exp": "Standard",
      "book": "https://www.q-tickets.com/MovieDetailsList/46446/hail-mary-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
+     "date": "2026-11-27",
+     "time": "4:45 pm",
+     "exp": "XL",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1441/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
+     "date": "2026-11-27",
+     "time": "7:45 pm",
+     "exp": "XL",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1441/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
+     "date": "2026-11-27",
+     "time": "10:45 pm",
+     "exp": "XL",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1441/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
+     "date": "2026-11-27",
+     "time": "11:30 pm",
+     "exp": "XL",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1441/1/",
+     "price": null,
+     "src": "direct"
+    }
+   ]
+  },
+  {
+   "id": "hungergamessunriseonthereaping",
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "poster": "https://images.epixcinemas.com/S3/uploads/gallery/1793464835934-hg_sotr_capitol_lowres_digital_poster_1.jpg",
+   "lang": [
+    "English"
+   ],
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Science Fiction"
+   ],
+   "indian": false,
+   "shows": [
+    {
+     "chain": "Epix",
+     "cinema": "Epix Al Liwan",
+     "date": "2026-11-27",
+     "time": "10:30 pm",
+     "exp": "Standard",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1352/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Epix",
+     "cinema": "Epix Al Liwan",
+     "date": "2026-11-27",
+     "time": "7:15 pm",
+     "exp": "Standard",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1352/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
+     "date": "2026-11-27",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1352/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-27",
+     "time": "5:15 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-27",
+     "time": "8:30 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-27",
+     "time": "3:45 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-27",
+     "time": "7:00 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-27",
+     "time": "10:15 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "5:15 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "8:30 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "11:15 am",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "12:30 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "3:45 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "7:00 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
+     "time": "10:15 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "5:15 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "8:30 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "11:15 am",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "12:30 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "3:45 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "7:00 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "10:15 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "5:15 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "8:30 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "11:15 am",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "12:30 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "3:45 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "7:00 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "10:15 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "5:15 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "8:30 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "11:15 am",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "12:30 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "3:45 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "7:00 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "10:15 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "5:15 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "8:30 pm",
+     "exp": "Platinum Suites",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "11:15 am",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "12:30 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "3:45 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "7:00 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "10:15 pm",
+     "exp": "IMAX",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "10:00 am",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "1:15 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-27",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "10:00 am",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "1:15 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-28",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "10:00 am",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "1:15 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-29",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "10:00 am",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "1:15 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-11-30",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "10:00 am",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "1:15 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-01",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "11:00 am",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "2:15 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "5:30 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "8:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "10:00 am",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "1:15 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "4:30 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "7:45 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "11:00 pm",
+     "exp": "IMAX",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "4:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox Bahrain City Centre",
+     "date": "2026-12-02",
+     "time": "10:30 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-27",
+     "time": "2:35 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-27",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-27",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-27",
+     "time": "7:15 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-28",
+     "time": "2:35 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-28",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-28",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-28",
+     "time": "7:15 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-29",
+     "time": "2:35 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-29",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-29",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-29",
+     "time": "6:45 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-30",
+     "time": "2:35 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-30",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-30",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-11-30",
+     "time": "6:45 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-01",
+     "time": "2:35 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-01",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-01",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-01",
+     "time": "6:45 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-02",
+     "time": "2:35 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-02",
+     "time": "5:45 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-02",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    },
+    {
+     "chain": "VOX",
+     "cinema": "Vox The Avenues",
+     "date": "2026-12-02",
+     "time": "6:45 pm",
+     "exp": "THEATRE",
+     "book": null,
+     "price": null,
+     "src": "elcinema"
+    }
+   ]
+  },
+  {
+   "id": "aakasamlookatara",
+   "title": "Aakasamlo Oka Tara",
+   "poster": "https://bahrain.cineco.net/wp-content/uploads/2026/11/AAKASAMLO-OKA-TARA-malayalam.jpg",
+   "lang": [
+    "Malayalam"
+   ],
+   "genres": [],
+   "indian": true,
+   "shows": [
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "4:45 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "8:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "11:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "4:45 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "7:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "7:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Seef",
+     "date": "2026-11-27",
+     "time": "11:30 am",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Seef",
+     "date": "2026-11-27",
+     "time": "12:30 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Seef",
+     "date": "2026-11-27",
+     "time": "5:15 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Seef",
+     "date": "2026-11-27",
+     "time": "7:45 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Seef",
+     "date": "2026-11-27",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Juffair",
+     "date": "2026-11-27",
+     "time": "1:15 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Juffair",
+     "date": "2026-11-27",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Juffair",
+     "date": "2026-11-27",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Juffair",
+     "date": "2026-11-27",
+     "time": "7:45 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Juffair",
+     "date": "2026-11-27",
+     "time": "8:15 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Juffair",
+     "date": "2026-11-27",
+     "time": "11:00 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Cineco",
+     "cinema": "Cineco Al Hamra",
+     "date": "2026-11-27",
+     "time": "2:45 pm",
+     "exp": "Standard",
+     "book": "https://q-tickets.com/MovieDetailsList/46424/aaksamlo-oka-tara-malayalam",
      "price": null,
      "src": "direct"
     }
@@ -7774,8 +9383,8 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "10:15 am",
+     "date": "2026-11-28",
+     "time": "10:00 am",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -7784,8 +9393,18 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "10:15 am",
+     "date": "2026-11-29",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "4:30 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -7844,96 +9463,66 @@
    ]
   },
   {
-   "id": "hungergamessunriseonthereaping",
-   "title": "The Hunger Games: Sunrise On The Reaping",
-   "poster": "https://media0110.elcinema.com/uploads/_150x200_a4c693a0a968c378a3a0bcafec28b847d9d95031378dded71391acf503af3efd.jpg",
+   "id": "travellershell",
+   "title": "Traveller’s Hell",
+   "poster": "https://images.epixcinemas.com/S3/uploads/gallery/1792417859637-ho00005785.jpg",
    "lang": [
-    "English"
+    "Arabic"
    ],
    "genres": [
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Science Fiction"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Thriller"
    ],
    "indian": false,
    "shows": [
     {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
      "date": "2026-11-27",
-     "time": "1:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "5:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "8:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "11:15 am",
+     "time": "4:00 pm",
      "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1410/1/",
      "price": null,
      "src": "direct"
     },
     {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
+     "chain": "Epix",
+     "cinema": "Epix Al Liwan",
      "date": "2026-11-27",
-     "time": "12:30 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "time": "6:00 pm",
+     "exp": "Standard",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1410/1/",
      "price": null,
      "src": "direct"
     },
     {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
+     "chain": "Epix",
+     "cinema": "Epix Al Liwan",
      "date": "2026-11-27",
-     "time": "3:45 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "time": "10:45 pm",
+     "exp": "Standard",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1410/1/",
      "price": null,
      "src": "direct"
     },
     {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "7:00 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
+     "chain": "Epix",
+     "cinema": "Epix Dana Mall",
      "date": "2026-11-27",
      "time": "10:15 pm",
-     "exp": "IMAX",
+     "exp": "Standard",
+     "book": "https://www.epixcinemas.com/now-showing-booking/1410/1/",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-27",
+     "time": "5:40 pm",
+     "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
      "price": null,
      "src": "direct"
@@ -7942,27 +9531,7 @@
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
      "date": "2026-11-28",
-     "time": "5:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "8:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "11:15 am",
+     "time": "5:40 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
      "price": null,
@@ -7971,68 +9540,8 @@
     {
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "12:30 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "3:45 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "7:00 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "10:15 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
      "date": "2026-11-29",
-     "time": "5:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "8:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "11:15 am",
+     "time": "5:40 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
      "price": null,
@@ -8041,68 +9550,8 @@
     {
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "12:30 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "3:45 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "7:00 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "10:15 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
      "date": "2026-11-30",
-     "time": "5:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "8:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "11:15 am",
+     "time": "5:40 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
      "price": null,
@@ -8111,68 +9560,8 @@
     {
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "12:30 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "3:45 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "7:00 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "10:15 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
      "date": "2026-12-01",
-     "time": "5:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "8:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "11:15 am",
+     "time": "5:40 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
      "price": null,
@@ -8181,1012 +9570,12 @@
     {
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "12:30 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "3:45 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "7:00 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "10:15 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
      "date": "2026-12-02",
-     "time": "5:15 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "8:30 pm",
-     "exp": "Platinum Suites",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "11:15 am",
+     "time": "5:40 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
      "price": null,
      "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "12:30 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "3:45 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "7:00 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "10:15 pm",
-     "exp": "IMAX",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "10:00 am",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "1:15 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "4:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-27",
-     "time": "10:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "10:00 am",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "1:15 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "4:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-28",
-     "time": "10:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "10:00 am",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "1:15 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "4:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-29",
-     "time": "10:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "10:00 am",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "1:15 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "4:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-11-30",
-     "time": "10:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "10:00 am",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "1:15 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "4:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-01",
-     "time": "10:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "11:00 am",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "2:15 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "5:30 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "8:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "10:00 am",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "1:15 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "4:30 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "7:45 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "11:00 pm",
-     "exp": "IMAX",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "4:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox Bahrain City Centre",
-     "date": "2026-12-02",
-     "time": "10:30 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-27",
-     "time": "2:35 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-27",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-27",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-27",
-     "time": "7:15 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-28",
-     "time": "2:35 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-28",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-28",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-28",
-     "time": "7:15 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-29",
-     "time": "2:35 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-29",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-29",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-29",
-     "time": "6:45 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-30",
-     "time": "2:35 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-30",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-30",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-11-30",
-     "time": "6:45 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-01",
-     "time": "2:35 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-01",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-01",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-01",
-     "time": "6:45 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-02",
-     "time": "2:35 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-02",
-     "time": "5:45 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-02",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
-    },
-    {
-     "chain": "VOX",
-     "cinema": "Vox The Avenues",
-     "date": "2026-12-02",
-     "time": "6:45 pm",
-     "exp": "THEATRE",
-     "book": null,
-     "price": null,
-     "src": "elcinema"
     }
    ]
   },
@@ -11114,6 +11503,26 @@
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
      "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "7:45 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "7:45 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
     }
    ]
   },
@@ -11328,7 +11737,7 @@
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
      "date": "2026-11-27",
-     "time": "2:30 pm",
+     "time": "7:40 pm",
      "exp": "Standard",
      "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
      "price": null,
@@ -11337,10 +11746,100 @@
     {
      "chain": "Reel",
      "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
+     "date": "2026-11-28",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-28",
      "time": "7:40 pm",
      "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-29",
+     "time": "7:40 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-11-30",
+     "time": "7:40 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-01",
+     "time": "7:40 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "2:30 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Reel",
+     "cinema": "Reel Marassi Galleria",
+     "date": "2026-12-02",
+     "time": "7:40 pm",
+     "exp": "Standard",
+     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
      "price": null,
      "src": "direct"
     }
@@ -11702,26 +12201,6 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
-     "time": "10:00 am",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "12:45 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
      "time": "4:15 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -11742,7 +12221,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "10:00 am",
+     "time": "12:30 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -11752,7 +12231,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "12:45 pm",
+     "time": "6:15 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -11761,8 +12240,18 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-28",
-     "time": "7:45 pm",
+     "date": "2026-11-29",
+     "time": "6:15 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "6:15 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -12129,26 +12618,6 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
-     "time": "1:15 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "9:00 pm",
-     "exp": "Standard",
-     "book": "https://www.muktaa2cinemas.com/bahrain",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Mukta A2",
-     "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
      "time": "11:15 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
@@ -12159,7 +12628,7 @@
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
-     "time": "1:30 pm",
+     "time": "1:15 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -12178,8 +12647,18 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "1:00 pm",
+     "date": "2026-11-29",
+     "time": "10:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "10:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -12198,8 +12677,18 @@
     {
      "chain": "Mukta A2",
      "cinema": "Mukta A2 Juffair Mall",
-     "date": "2026-11-27",
-     "time": "11:00 am",
+     "date": "2026-11-29",
+     "time": "4:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "4:00 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -12210,6 +12699,26 @@
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-27",
      "time": "5:15 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "9:00 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-27",
+     "time": "11:59 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -12230,6 +12739,56 @@
      "cinema": "Mukta A2 Juffair Mall",
      "date": "2026-11-28",
      "time": "5:15 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-28",
+     "time": "9:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-29",
+     "time": "9:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "4:30 pm",
+     "exp": "Standard",
+     "book": "https://www.muktaa2cinemas.com/bahrain",
+     "price": null,
+     "src": "direct"
+    },
+    {
+     "chain": "Mukta A2",
+     "cinema": "Mukta A2 Juffair Mall",
+     "date": "2026-11-30",
+     "time": "9:30 pm",
      "exp": "Standard",
      "book": "https://www.muktaa2cinemas.com/bahrain",
      "price": null,
@@ -12264,78 +12823,6 @@
      "time": "7:45 pm",
      "exp": "Standard",
      "book": "https://q-tickets.com/MovieDetailsList/46418/the-hunger-games-sunrise-on-the-reaping-english",
-     "price": null,
-     "src": "direct"
-    }
-   ]
-  },
-  {
-   "id": "travellershell",
-   "title": "Traveller’s Hell",
-   "poster": null,
-   "lang": [
-    "Arabic"
-   ],
-   "genres": [],
-   "indian": false,
-   "shows": [
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-27",
-     "time": "5:40 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-27",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-28",
-     "time": "5:40 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-28",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-29",
-     "time": "5:40 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-29",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-11-30",
-     "time": "5:40 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-11-30",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-01",
-     "time": "5:40 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-01",
-     "price": null,
-     "src": "direct"
-    },
-    {
-     "chain": "Reel",
-     "cinema": "Reel Marassi Galleria",
-     "date": "2026-12-02",
-     "time": "5:40 pm",
-     "exp": "Standard",
-     "book": "https://www.reelcinemas.com/en-bh/showtime/?date=2026-12-02",
      "price": null,
      "src": "direct"
     }
