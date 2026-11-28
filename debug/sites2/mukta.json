@@ -6,7 +6,7 @@
   ]
  ],
  "dates_21585": "<option value=\"0\">Date</option><option style=font-size:11px; value='11/28/2026'>Sat 28<sup>th</sup> Nov</option><option style=font-size:11px; value='11/29/2026'>Sun 29<sup>th</sup> Nov</option><option style=font-size:11px; value='11/30/2026'>Mon 30<sup>th</sup> Nov</option><option style=font-size:11px; value='12/1/2026'>Tue 1<sup>st</sup> Dec</option><option style=font-size:11px; value='12/2/2026'>Wed 2<sup>nd</sup> Dec</option>",
- "times_21585_11/28/2026": "<option value=\"0\">Time</option><option  value='01:15:00 PM_117184'>01:15 PM</option><option  value='09:00:00 PM_117163'>09:00 PM</option>",
+ "times_21585_11/28/2026": "<option value=\"0\">Time</option><option  value='09:00:00 PM_117163'>09:00 PM</option>",
  "times_21585_11/29/2026": "<option value=\"0\">Time</option><option  value='10:00:00 PM_117204'>10:00 PM</option>",
  "times_21585_11/30/2026": "<option value=\"0\">Time</option><option  value='10:00:00 PM_117207'>10:00 PM</option>",
  "times_21585_12/1/2026": "<option value=\"0\">Time</option><option  value='10:00:00 PM_117210'>10:00 PM</option>",
